@@ -244,7 +244,7 @@ class Cleaner:
         self.df["Prezzo"] = self.df["Prezzo"].str.replace(",", ".", regex=False)
         self.df["Prezzo"] = pd.to_numeric(self.df["Prezzo"], errors="coerce")
 
-        if self.df.dtypes["Prezzo"] is float:
+        if not pd.api.types.is_numeric_dtype(self.df.dtypes["Prezzo"]):
             raise ValueError(
                 "Attenzione: la colonna 'Prezzo' non è di tipo float. Parsing fallito."
             )
