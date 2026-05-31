@@ -1,0 +1,19 @@
+steps:
+  # Step 1: Costruisce l'immagine
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/gen-lang-client-0661747258/github.com/m-contini/consorzio:$COMMIT_SHA', '-f', 'Dockerfile', '.']
+  
+  # Step 2: Carica l'immagine nel registro
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/gen-lang-client-0661747258/github.com/m-contini/consorzio:$COMMIT_SHA']
+  
+  # Step 3: Aggiorna il Job con la nuova immagine
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'jobs'
+      - 'update'
+      - 'consorzio' # Nome esatto del Job
+      - '--image=gcr.io/gen-lang-client-0661747258/github.com/m-contini/consorzio:$COMMIT_SHA'
+      - '--region=europe-west1' # Inserisci la tua regione (es. europe-west1, europe-southwest1)
