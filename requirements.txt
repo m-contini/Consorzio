@@ -9,3 +9,4 @@ prompt_toolkit
 python-dotenv
 xlsxwriter
 colorama
+pytest
