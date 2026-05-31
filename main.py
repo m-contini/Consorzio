@@ -12,6 +12,8 @@ import core.ingestion as ingestion
 import core.tui as tui
 import core.alert as alert
 
+raise Exception("TEST ERROR REPORTING: Questo è un errore volontario per testare le notifiche email di Google Cloud.")
+
 now = datetime.now()
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
 history_dir = MENU_JSON.parent / "history"
