@@ -55,6 +55,8 @@ class Notification:
             f"{self.timestamp}_inserted_rows.csv": self.inserted_rows,
         }
         for fname, df in changed_rows.items():
+            if df.empty:
+                continue
             # Il DataFrame
             # viene convertito in stringa CSV e poi codificato in byte per l'invio
             df_as_str = df.to_csv(index=False, sep=";")

@@ -6,7 +6,6 @@ invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 
 from datetime import datetime
 import os
-
 from core.colors import *
 from core.const import MENU_JSON, DB_PATH
 import core.ingestion as ingestion
@@ -15,10 +14,9 @@ import core.alert as alert
 
 now = datetime.now()
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
+history_dir = MENU_JSON.parent / "history"
 menu_json = (
-    MENU_JSON.parent
-    / "history"
-    / (now.strftime("%Y-%m-%dT%H-%M-%S") + "_" + MENU_JSON.name)
+    history_dir / (now.strftime("%Y-%m-%dT%H-%M-%S") + "_" + MENU_JSON.name)
 )
 db_path = DB_PATH
 
@@ -27,6 +25,10 @@ def main() -> None:
     """
     Funzione principale che orchestra le fasi di data ingestion e l'interfaccia utente.
     """
+
+    # Assicura che le cartelle esistano (necessario per i volumi montati)
+    menu_json.parent.mkdir(parents=True, exist_ok=True)
+    db_path.parent.mkdir(parents=True, exist_ok=True)
 
     # SCRAPING + SAVE + INIT + CLEANING + UPDATE
     print(cyan("\nScraping menu..."))
@@ -38,7 +40,7 @@ def main() -> None:
 
     # ALERT
     if db.is_updated:
-        print(f"{yellow('[EMAIL]')} 📩 Sending notification via e-mail")
+        print(f"{yellow('[EMAIL]')} 📩 Sending notification via e-mail...")
         _alert = alert.Notification(
             db.deactivated_rows, db.inserted_rows, timestamp=now, reciprocal=True
         )
