@@ -30,6 +30,10 @@ class Database:
         # Flag che segnala se ci sono state variazioni nel menu
         self._is_updated: bool = False
 
+        # Inizializza DataFrame che saranno (se non vuoti) allegati all'email di notifica
+        self.deactivated_rows: pd.DataFrame = pd.DataFrame()
+        self.inserted_rows: pd.DataFrame = pd.DataFrame()
+
     @property
     def empty(self) -> bool:
         return self.df.empty
