@@ -8,4 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 ENV HEADLESS=true
+ENV DATA_PATH=/data
+
 CMD ["python", "main.py"]
