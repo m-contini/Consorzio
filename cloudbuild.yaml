@@ -16,4 +16,7 @@ steps:
       - 'update'
       - 'consorzio' # Nome esatto del Job
       - '--image=gcr.io/gen-lang-client-0661747258/github.com/m-contini/consorzio:$COMMIT_SHA'
-      - '--region=europe-west1' # Inserisci la tua regione (es. europe-west1, europe-southwest1)
+      - '--region=europe-west1' # Nome esatto della regione
+
+options:
+  logging: CLOUD_LOGGING_ONLY
