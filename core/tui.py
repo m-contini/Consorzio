@@ -264,7 +264,7 @@ class InteractiveMenu:
             return
 
         # Calcola il numero di elementi per la prima categoria dell'indice (es. Bevande. Cibo)
-        count = self.df.groupby(level=0).size().reset_index(name="Numero ARticoli")
+        count = self.df.groupby(level=0).size().reset_index(name="Numero Articoli")
         count.columns = ["Categoria", "Articoli"]
         print("\n📦 QUANTITÀ PER CATEGORIA:")
         print(

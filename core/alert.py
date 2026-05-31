@@ -15,7 +15,7 @@ class Notification:
     """
 
     def __init__(
-        self, *rows: pd.DataFrame, timestamp: datetime, reciprocal: bool = True
+        self, *new_rows: pd.DataFrame, timestamp: datetime, reciprocal: bool = True
     ) -> None:
 
         # Il parametro `reciprocal`, se True, imposta
@@ -24,9 +24,9 @@ class Notification:
             print(
                 f"{red('[EMAIL]')} ❌ Credentials not set. Unable to send email: check .env file."
             )
-            return
+            raise ValueError("Missing credentials.")
 
-        self.deactivated_rows, self.inserted_rows = rows
+        self.deactivated_rows, self.inserted_rows = new_rows
         self.timestamp: datetime = timestamp
 
     def _set_credentials(self, reciprocal: bool) -> bool:
