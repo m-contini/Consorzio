@@ -5,6 +5,7 @@ invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 """
 
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import os
 from core.colors import *
 from core.const import MENU_JSON, DB_PATH
@@ -12,10 +13,11 @@ import core.ingestion as ingestion
 import core.tui as tui
 import core.alert as alert
 
-now = datetime.now()
+now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
+
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
 history_dir = MENU_JSON.parent / "history"
-menu_json = history_dir / (now.strftime("%Y-%m-%dT%H-%M-%S") + "_" + MENU_JSON.name)
+menu_json = history_dir / (now + "_" + MENU_JSON.name)
 db_path = DB_PATH
 
 

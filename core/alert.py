@@ -1,4 +1,3 @@
-from datetime import datetime
 import smtplib
 from email.message import EmailMessage
 import os
@@ -15,7 +14,7 @@ class Notification:
     """
 
     def __init__(
-        self, *new_rows: pd.DataFrame, timestamp: datetime, reciprocal: bool = True
+        self, *new_rows: pd.DataFrame, timestamp: str, reciprocal: bool = True
     ) -> None:
 
         # Il parametro `reciprocal`, se True, imposta
@@ -27,7 +26,7 @@ class Notification:
             raise ValueError("Missing credentials.")
 
         self.deactivated_rows, self.inserted_rows = new_rows
-        self.timestamp: datetime = timestamp
+        self.timestamp: str = timestamp
 
     def _set_credentials(self, reciprocal: bool) -> bool:
         """Carica le variabili d'ambiente e imposta le credenziali email."""
