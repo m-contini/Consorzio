@@ -1,0 +1,1905 @@
+{
+    "BEVI BENE": {
+        "BIRRE ALLA SPINA (possibili allergeni: glutine)": [
+            {
+                "name1": "SANFALERFO Consorzio birre official (Birra agricola)",
+                "name2": "LAGER German style 4,9% Alc vol",
+                "price": "€ 6,00 media € 4,50 piccola"
+            },
+            {
+                "name1": "BIANCANEVE Consorzio birre official (Birra agricola)",
+                "name2": "Blanche 5 % Alc vol",
+                "price": "€ 6,50 media € 5,00 piccola"
+            },
+            {
+                "name1": "LA ROSSA DEL PARCO NORD Consorzio birre official",
+                "name2": "Strong ale ambrata 7,5 % Alc vol",
+                "price": "€ 7,00 media € 5,50 piccola"
+            },
+            {
+                "name1": "BIANCONIGLIO Consorzio birre official",
+                "name2": "WHITE IPA 5,5% Alc vol",
+                "price": "€ 7,00 media € 5,50 piccola"
+            },
+            {
+                "name1": "RED ZEPPELIN Consorzio birre official",
+                "name2": "RED IPA 5,6% Alc vol",
+                "price": "€ 6,50 media € 5,00 piccola"
+            },
+            {
+                "name1": "NUCLEARE Consorzio birre official NEW NEW",
+                "name2": "Double Ipa 8 % Alc vol",
+                "price": "€ 7,50 media € 6,00 piccola"
+            },
+            {
+                "name1": "LA MONASTICA Consorzio birre official NEW NEW",
+                "name2": "TRIPEL 8,5 % Alc vol",
+                "price": "€ 7,50 media € 6,00 piccola"
+            },
+            {
+                "name1": "CUORE NERO Consorzio birre official",
+                "name2": "Stout 4,7% % Alc vol",
+                "price": "€ 7,00 media € 5,50 piccola"
+            },
+            {
+                "name1": "LA MATI (Birra blu come i suoi occhi) Consorzio birre official",
+                "name2": "Session Ipa 4,5 % Alc vol",
+                "price": "€ 7,00 media € 5,50 piccola"
+            },
+            {
+                "name1": "AFUMIGADA",
+                "name2": "Rauch beer leggermente affumicata 5% % Alc vol",
+                "price": "€ 6,00 media € 4,50 piccola"
+            },
+            {
+                "name1": "CASTANA Birrificio Oltrepo'",
+                "name2": "Speciale al miele di castagno 6,2 % Alc vol",
+                "price": "€ 7,00 media € 5,50 piccola"
+            },
+            {
+                "name1": "DEGUSTAZIONE BIRRE",
+                "name2": "4 Bicchieri da 0,15 cl a scelta dalla taplist",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "BOON OUDE GEUZE (dalla bottiglia)",
+                "name2": "Lambic a fermentazione 100% spontanea 7%Vol",
+                "price": "Bicchiere 20 cl € 5,00 Bicchiere 30 cl € 7,50"
+            }
+        ],
+        "COCKTAIL ANALCOLICI": [
+            {
+                "name1": "ATLANTICO",
+                "name2": "GIN ANALCOLICO ,SUCCO di POMPELMO, SCIROPPO DI MENTA",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "LAMPO LAMPO",
+                "name2": "SODA, LIME, ZUCCHERO DI CANNA, SCIROPPO AL LAMPONE",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "MOIJTO RENATO ZERO",
+                "name2": "GINGER ALE, SCIROPPO LIMONE, MENTA FOGLIE, LIME, ZUCCHERO",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "TRAMONTO ROSSO",
+                "name2": "SUCCO ANANAS, SUCCO ARANCIA, SUCCO PESCA, GRANATINA",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "SHIRLEY TEMPO ZERO",
+                "name2": "GINGER ALE E GRANATINA",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "GIN TONIC 0.0",
+                "name2": "GIN ANALCOLICO, TONICA, LIME",
+                "price": "€ 9,50"
+            }
+        ],
+        "APERITIVI E COCKTAIL": [
+            {
+                "name1": "SPRITZ SELECT (Tipico veneziano)",
+                "name2": "Select, brut",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "SPRITZ HUGO",
+                "name2": "Sciroppo di sambuco artigiano,brut",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "GINGER GIN (ITALIAN MULE)",
+                "name2": "ROBYMARTON GIN E GINGER BEER",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "CHINOTTO ALCOLICO AL RADICCHIO ROSSO",
+                "name2": "ROBYMARTON BITTER E TONICA",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "SPRITZ APEROL",
+                "name2": "Aperol & brut",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "SPRITZ BITTER",
+                "name2": "Bitter artigianale & brut",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "GINJTO (cocktail fresco)",
+                "name2": "Gin agricolo, menta lime, gingerbeer",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "BEER SPRITZ",
+                "name2": "Aperol & white IPA",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "NEGRONIPA",
+                "name2": "birra IPA, bitter e vermut",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "NEGRONI",
+                "name2": "Vermuth, bitter e gin",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "AMERICANO",
+                "name2": "Vermuth, bitter",
+                "price": "€ 10,00"
+            },
+            {
+                "name1": "SBAGLIATO",
+                "name2": "Vermuth, bitter ,bollicino extra brut",
+                "price": "€ 10,00"
+            }
+        ],
+        "GIN TONIC SECCHI 7,5CL": [
+            {
+                "name1": "GINK DRY HOPPED",
+                "name2": "Dry HOPPED Gin agrumato ,secco erbaceo 42% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "GINK CRAK LONDON DRY",
+                "name2": "London dry, angelica cardamomo, finale pulito e secco 42% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "HAYMANS SLOE GIN",
+                "name2": "Gin alle prugne selvatiche, sembra un chinotto alcolico 26% alc vol",
+                "price": "€10,00"
+            },
+            {
+                "name1": "EDEN MILL LOVE GIN",
+                "name2": "Gin estivo e fresco è completato da vaniglia , fragole fruttate. 40% alc vol",
+                "price": "€12,00"
+            },
+            {
+                "name1": "ROBY MARTON HANDCRAFTED PREMIUM GIN",
+                "name2": "Gin secco, con sentore di ginepro, liquirizia e zenzero, seguito da delicate note agrumate. 47% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "BAREKSTEIN NAVY STRENGHT TOP TOP",
+                "name2": "London Dry con note erbacee e fruttate esplosione di gusto 57% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "BAREKSTEIN NORDLYS NEW NEW",
+                "name2": "Classico London Dry speziato ,piccante ed erbaceo 41% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "BAREKSTEIN DOUBLE",
+                "name2": "Miscela di due distillati, bacche di ginepro e otto diverse botaniche,pepe rosa, note di limone e arancia. 43% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "GIN PRIMO CLASSICO AL SALE DI CERVIA",
+                "name2": "Gusto pulito e sapido, esprime eleganza ed equilibrio , gusto deciso e balsamico 43% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "GIN PRIMO AFRICA AL SALE DI NAMIBIA",
+                "name2": "È un gin speziato ottenuto dall’infusione di 9 botaniche esaltate dalle perle di sale della Namibia 43% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "GIN PRIMO ASIA AL SALE DI COREA",
+                "name2": "Gin agrumato e sapido con sale marino coreano cotto sulle braci di bambù. 43% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "EUGIN FORESTA Distilleria indipendente",
+                "name2": "London dry a pieno grado,con sentori di foglie e di piante di bosco, di frutta secca e ginepro 57,6% alc vol",
+                "price": "€14,00"
+            },
+            {
+                "name1": "GIN TONIC ANALCOLICO- TANQUERAY ALCOHOL FREE 0.0% (bho)",
+                "name2": "Bouquet di botaniche mentre in bocca si rivela aromatico, succoso e dissetante",
+                "price": "€ 9,50"
+            },
+            {
+                "name1": "ROBY MARTON HIGH PROOF PREMIUM GIN",
+                "name2": "secco, con sentore di ginepro, liquirizia e zenzero, seguito da delicate note agrumate 55,5% Alc vol.",
+                "price": "€ 15,00"
+            }
+        ],
+        "GIN TONIC MORBIDI 7,5CL": [
+            {
+                "name1": "BIG GINO RED HOT FRUITS (PICCANTE)",
+                "name2": "Con fragole rosse e peperoncino pugliese (Afrodisiaco) 38% alc vol",
+                "price": "€10,00"
+            },
+            {
+                "name1": "BIG GINO VELVET ROSE",
+                "name2": "Gin con petali di rosa che gli donano una nota floreale e pepe bianco per una sfumatura speziata. 40% alc vol",
+                "price": "€12,00"
+            },
+            {
+                "name1": "ETSU GIN ORIGINAL GIAPPONE",
+                "name2": "Gin fresco e rotondo,radici di liquirizia ,angelica,coriandolo ed essenze di yuzu giapponese 42% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "ETSU GIN SAKURA GIAPPONE",
+                "name2": "Gin con dolcezza del sakura e freschezza dello yuzu,nota erbacea sul finale e freschezza agrumata 42% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "HIMBRIMI OLD TOM Small batch",
+                "name2": "Al palato domina il ginepro assieme alle note floreali, in particolare è distintiva quella simile alla lavanda del timo artico 40% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "MELIFERA GIN FRANCESE",
+                "name2": "Realizzato con un fiore considerato immortale: l'elicriso. Può essere descritto come un gin elegante e complesso. 43% alc vol",
+                "price": "€13,00"
+            },
+            {
+                "name1": "DEUX FRERES AUSTRIA (Cambia colore)",
+                "name2": "Sentori floreali e freschi di ginepro alpino. Al palato è fresco, speziato e piacevolmente morbido,. 43% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "LE TRIBUTE GIN TONIC",
+                "name2": "Al palato è fresco e fruttato, con vibranti note citriche e un tocco di citronella e ginepro. 43% alc vol",
+                "price": "€14,00"
+            },
+            {
+                "name1": "MIRABEAU GIN ROSE'",
+                "name2": "Questo gin viene ottenuto dalla macerazione di 24 ore di ben 11 botaniche in uno spirito neutro al 100% a base di uva 43% alc vol",
+                "price": "€14,00"
+            },
+            {
+                "name1": "MISTRAL GIN ROSE' DRY",
+                "name2": "Potenza tipica del gin, le erbe provenzali (timo e basilico) e le note di agrumi, menta e anice 40% alc vol",
+                "price": "€12,00"
+            },
+            {
+                "name1": "COTSWALD DRY GIN (morbido Equilibrato) CAMPIONE DEL MONDO 2019",
+                "name2": "Gin infuso per macerazione con botaniche dal Cotswolds, Note di eucalipto e pino. Pepato.46% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "COTSWALD OLD TOM CAMPIONE DEL MONDO 2019",
+                "name2": "Gin dolce e speziato 42% alc vol",
+                "price": "€15,00"
+            },
+            {
+                "name1": "GIN TONIC- BAREKSTEN OLD TOM (morbido)",
+                "name2": "Note erbacee ,radici terrose e dolci che sembrano di miele. 44% alc vol",
+                "price": "€ 15,00"
+            },
+            {
+                "name1": "GIN TONIC- BERTHAS REVENGE small batch IRELAND",
+                "name2": "Gin distillato dal siero del latte di mucca,gusto fine,dove esce sul finale l'equilibrio del ginepro .42% Alc vol",
+                "price": "€ 15,00"
+            },
+            {
+                "name1": "GIN TONIC ANALCOLICO- TANQUERAY ALCOHOL FREE 0.0%",
+                "name2": "Distilled dry gin,alghe scozzesi,finocchio marino,alga Kombu",
+                "price": "€ 9,50"
+            },
+            {
+                "name1": "FRED JERBIS GIN TONIC ALLA CAMOMILLA",
+                "name2": "Gin infusione a freddo di camomilla. Il gusto è erbaceo,delicato, con nota fresca di menta. 43%Alc vol",
+                "price": "€ 14,00"
+            },
+            {
+                "name1": "MINKE GIN TONIC IRISH",
+                "name2": "Gin che offre al palato agrumi, anice e ginepro terroso, su uno sfondo salato. 43%Alc vol",
+                "price": "€ 15,00"
+            }
+        ],
+        "BIRRE BOTTIGLIA O LATTINA (possibili allergeni: glutine)": [
+            {
+                "name1": "BIRRA BOTTIGLIA O LATTINA AL TAVOLO DA 33 CL",
+                "name2": "Chiedere per tipologia",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "BIRRA BOTTIGLIA O LATTINA DA 40 CL",
+                "name2": "Chiedere per tipologia",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "BIRRA BOTTIGLIA O LATTINA DA 50 CL",
+                "name2": "Chiedere per tipologia",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "NIGHTMARE PORTER Hambleton Brewery BOTTIGLIA DA 50 CL",
+                "name2": "Porter 5%",
+                "price": "€ 8,50"
+            },
+            {
+                "name1": "PAPA NERO DA 33 CL (Bottiglia)",
+                "name2": "Imperial stout 12%Alc vol",
+                "price": "€ 15,00"
+            },
+            {
+                "name1": "MANSUETO 2023 DA 37,5 CL (Bottiglia)",
+                "name2": "Barley wine invecchiatia per un anno in botti di Whisky ed altri tre anni in botti di Rum Caroni 12%Alc vol",
+                "price": "€ 15,00"
+            },
+            {
+                "name1": "MANSUETO 2022 DA 37,5 CL (Bottiglia)",
+                "name2": "Barley wine invecchiatia per un anno in botti di Whisky ed altri tre anni in botti di Rum Caroni 12%Alc vol",
+                "price": "€ 18,00"
+            },
+            {
+                "name1": "MANSUETO RISERVA CHATEAU MARGAUX 2019 DA 37,5 CL (Bottiglia in cassetta di legno)",
+                "name2": "Barley wine invecchiatia per 3 anni in botti di Chateau Margaux ed altri 2 anni in bottiglia 13%Alc vol",
+                "price": "€ 38,00"
+            }
+        ],
+        "BIRRE GLUTEN FREE BOTTIGLIA O LATTINA": [
+            {
+                "name1": "BIRRA GLUTEN FREE",
+                "name2": "33 cl",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "BIRRA GLUTEN FREE",
+                "name2": "40 cl",
+                "price": "€ 8,50"
+            }
+        ],
+        "BIRRE SENZA ALCOOL meno di 0,5 VOL BOTTIGLIA O LATTINA": [
+            {
+                "name1": "BIRRA ALCOHOL FREE <0,5 VOL",
+                "name2": "33 cl",
+                "price": "€ 7,50"
+            },
+            {
+                "name1": "BIRRA ALCOHOL FREE <0,5 VOL",
+                "name2": "50 cl",
+                "price": "€ 8,50"
+            }
+        ],
+        "VINI ROSSI (possibili allergeni: solfiti)": [
+            {
+                "name1": "SAN LORENZO Cantina Corte Lenguin",
+                "name2": "Rosso passito secco (amarone che fa acciaio) 16% alcol vol",
+                "price": "€ 28 Bottiglia € 6,50 calice"
+            },
+            {
+                "name1": "Montepulciano d’Abruzzo DOC 2022 Aida Marchesi Dè Cordano",
+                "name2": "Frutta rossa matura, ciliegie, prugne e note floreali, 9 mesi in botte di legno.13% alc.vol",
+                "price": "€ 20 Bottiglia"
+            },
+            {
+                "name1": "CABERNET SAUVIGNON DOC 2022 Cantina LE FAVOLE",
+                "name2": "Fragranze di frutti di bosco, ribes e prugna 12,5% alcol vol",
+                "price": "€ 20 Bottiglia"
+            },
+            {
+                "name1": "REFOSCO DAL PEDUNCOLO ROSSO DOC 2022 Cantina LE FAVOLE",
+                "name2": "Refosco dal peduncolo rosso 100% Profumi di viola e prugna matura, vaniglia e pepe 13% alcol vol",
+                "price": "€ 22 Bottiglia"
+            },
+            {
+                "name1": "TODI ROSSO DOC 2023 Cantina TUDERNUM",
+                "name2": "Uve Sangiovese (50%) e Merlot (50%) morbido e vellutato 12% alcol vol",
+                "price": "€ 22 Bottiglia"
+            },
+            {
+                "name1": "CALEIDO NEGRAMARO IGP 2021 Masseria JORCHE",
+                "name2": "Uve 100% Negramaro del salento 15 mesi in barriques ,13% alcol vol",
+                "price": "€ 24 Bottiglia"
+            },
+            {
+                "name1": "ARMONIA IGT 2022 (Tenuta Casadei Maremma toscana)",
+                "name2": "Cabernet sauvignon + Syrah 50% affinamento in Barrique di rovere francese per 12 mesi. 13,5% vol",
+                "price": "€ 24 Bottiglia"
+            },
+            {
+                "name1": "MORELLINO DI SCANSANO 2023 La Selva BIO VEGAN",
+                "name2": "Sangiovese, Merlot ,note di frutti rossi e spezie 14% vol",
+                "price": "€ 24 Bottiglia"
+            },
+            {
+                "name1": "Edoardo Chianti Colli Senesi DOCG - Pizzolato",
+                "name2": "Affinamento in grandi botti di rovere,aromi di ciliegie mature, ribes nero e una fine nota speziata di erbe. 13% vol",
+                "price": "€ 25 Bottiglia"
+            },
+            {
+                "name1": "RIPASSO VALPOLICELLA Classico superiore DOC (Tenuta Corte Lenguin)",
+                "name2": "Affinato in botti di legno tostato fruttato,sentori di ciliegia, amarena, mirtillo,13,5% vol",
+                "price": "€ 25 Bottiglia"
+            },
+            {
+                "name1": "LAGREIN TRENTINO DOC 2025- Cantina Aldeno",
+                "name2": "Vino fruttato, con sentori di piccoli frutti, strutturato e sapido al palato. 12,5% vol",
+                "price": "€ 25 Bottiglia"
+            },
+            {
+                "name1": "MONTEFALCO FIDENZIO DOC 2021 Cantina Tudernum",
+                "name2": "Sangiovese 70%, sagrantino 15%, merlot 15%-affinamento in barrique di rovere francese per 12 mesi 14% vol",
+                "price": "€ 25 Bottiglia"
+            },
+            {
+                "name1": "SYRAH LAZIO IGT ORIENTE 2024-I PAMPINI",
+                "name2": "SYRHA 100% aromi freschi ed evoluti, spaziando dal tipico pepe a sfumature boschive 12,5% alcol vol",
+                "price": "€ 29 Bottiglia"
+            },
+            {
+                "name1": "SOGNO MEDITERRANEO IGT 2022 (Tenuta Casadei Maremma toscana)",
+                "name2": "SYRHA 85% invecchiato in botti di rovere profumi intensi di mora e frutti di ribes 13,5% alcol vol",
+                "price": "€ 29 Bottiglia"
+            },
+            {
+                "name1": "NEBBIOLO MONDANO MONFERRATO DOC 2022 (HIC ET NUNC Cantina)",
+                "name2": "Nebbiolo 100% frutti rossi e spezie,affinato in acciaio per 12 mesi. 13,5% Vol",
+                "price": "€ 29,5 Bottiglia"
+            },
+            {
+                "name1": "PONTIUS AGLIANICO BIO DOCG 2018 Cantina Nifo",
+                "name2": "Aglianico del Taburno 14% alcol vol",
+                "price": "€ 29,50 Bottiglia"
+            },
+            {
+                "name1": "MONTEPULCIANO D'ABRUZZO 74 Ceppette 2019 RISERVA Cantina G.Farchione",
+                "name2": "Montepulciano d'abruzzo affinatoi in barrique rovere di Slavonia 14% alcol vol",
+                "price": "€ 29,50 Bottiglia"
+            },
+            {
+                "name1": "PRIMITIVO DI MANDURIA 2020 Masseria JORCHE",
+                "name2": "Uve raccolte a mano 100%primitivo 9 mesi in barrique ,15% alcol vol",
+                "price": "€ 29,50 Bottiglia"
+            },
+            {
+                "name1": "STORIIS REFOSCO DOC 2018 Cantina LE FAVOLE",
+                "name2": "Refosco dal peduncolo rosso 100% 10 mesi sui lieviti ,13% alcol vol",
+                "price": "€ 35 Bottiglia"
+            },
+            {
+                "name1": "LE MASSE DI GREVE RISERVA CHIANTI CLASSICO DOCG 2021",
+                "name2": "Sangiovese, 13,5 % alcol vol Retrogusto fruttato persistente.",
+                "price": "€ 35 Bottiglia"
+            },
+            {
+                "name1": "PRIMITIVO DI MANDURIA RISERVA 2019 Masseria JORCHE",
+                "name2": "Uve raccolte a mano 100%primitivo 12 mesi in barrique macerazione sulle bucce ,16% alcol vol",
+                "price": "€ 40 Bottiglia"
+            },
+            {
+                "name1": "AMARONE DELLA VALPOLICELLA CLASSICO DOCG 2020 Corte Lenguin",
+                "name2": "Corvina Veronese, Corvinone, Rondinella 16 % Alc vol",
+                "price": "€ 45 Bottiglia"
+            },
+            {
+                "name1": "MONTEPULCIANO D'ABRUZZO ``DI TE DI ME`` 2017 RISERVA Cantina G.Farchione",
+                "name2": "Montepulciano d'abruzzo.IMB 7 ANNI DOPO VENDEMMIA affinato in barrique rovere di Slavonia 15% alcol vol",
+                "price": "€ 45 Bottiglia"
+            },
+            {
+                "name1": "ROSATO TRENTINO 2024 Cantina Aldeno",
+                "name2": "Delicato con piacevoli note di frutta, vaniglia e viola.i 12% alcol vol",
+                "price": "€ 19 bottiglia"
+            }
+        ],
+        "VINI BIANCHI (possibili allergeni: solfiti)": [
+            {
+                "name1": "SAUVIGNON BLANC FRIULI 2023 Cantina Le Favole",
+                "name2": "Delicati profumi di foglia di pomodoro e salvia che incontrano essenze d'ananas e accenni di mela 13,5% Alc vol",
+                "price": "€ 23,00 bottiglia € 6 calice"
+            },
+            {
+                "name1": "GRILLO RAHANA Cantina De Gregorio",
+                "name2": "Vino morbido fresco sapido ,carico di frutta bianca con qualche accenno tropicale 12,5% Alc vol",
+                "price": "€ 22,00 bottiglia"
+            },
+            {
+                "name1": "TREBBIANO 2023 DOC Cantina G.Farchione",
+                "name2": "TREBBIANO 100% Sprigiona un gradevole ed invitante profumo fruttato 12,5% Alc vol",
+                "price": "€ 22,00 bottiglia"
+            },
+            {
+                "name1": "FALANGHINA VESUVIO BIO VEGAN 2024 Cantina Sorrentino",
+                "name2": "Sentori di agrumi, mela, pera, pompelmo.Note minerali e balsamiche. 13% Alc vol",
+                "price": "€ 23,00 bottiglia"
+            },
+            {
+                "name1": "VERDICCHIO DEI CASTELLI DI JESI DOC BIO 2025 Podere Santa Lucia",
+                "name2": "Vino profumato ed elegante. Un Verdicchio tradizionale dagli aromi fruttati e floreali. 13% Alc vol",
+                "price": "€ 23,00 bottiglia"
+            },
+            {
+                "name1": "RIESLING RENANO Cantina Taja",
+                "name2": "Note di pesca bianca, frutta a polpa morbida e accenti balsamici 12,5% Alc vol",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "GAVI DOCG BIO 2024 del comune di Tassarolo Cantina La Zerba",
+                "name2": "Gavi DOCG biologico da uve Cortese. Fresco, armonico, minerale.13,5% Alc vol",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "RIBOLLA GIALLA DOP COLLI ORIENTALI 2024 Cantina Cadibon",
+                "name2": "Note di fiori di acacia e ananas, in bocca è asciutto e fresco 13% Alc vol",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "TRAMINER AROMATICO DOC FRIULI 2023 Cantina Le Favole",
+                "name2": "Profumi di rosa e di mela equilibrata acidità e mineralità 13% Alc vol",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "VINHO VERDE LOPES RIBEIRO (Portogallo)",
+                "name2": "Bianco fresco, aromi di mela verde e limone assieme a note minerali 13% Alc vol",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "BELLONE LAZIO BIANCO IGT 2024 Cantina I Pampini",
+                "name2": "Vitigno Cacchione/Bellone 100% sentori floreali, erbacei, di sottobosco e note di minerale 12% Alc vol",
+                "price": "€ 26,00 bottiglia"
+            },
+            {
+                "name1": "VERMENTINO MAREMMA TOSCANA DOC 2024 BIO VEGAN Cantina La Selva",
+                "name2": "100% Vermentino ,note di agrumi, pesche e fiori gialli 13,5% Alc vol",
+                "price": "€27,00 bottiglia"
+            },
+            {
+                "name1": "LUGANA DOC LIMNE Tenuta Roveglia",
+                "name2": "Turbiana 100%. grande corpo, un profumo delicato ed un bouquet complesso e raffinato 13% Alc vol",
+                "price": "€27,00 bottiglia"
+            },
+            {
+                "name1": "AMPHORA MORIS 2018 Poderi san Pietro",
+                "name2": "Bianco in anfora igt 14% alc vol",
+                "price": "€ 30,00 bottiglia"
+            },
+            {
+                "name1": "LUGANA RISERVA doc Vigne di Catullo 2019 Tenuta Roveglia",
+                "name2": "Bouquet particolarmente ricco dove le note più fredde e minerali si armonizzano con quelle della frutta matura 13% Alc vol",
+                "price": "€ 39,50 bottiglia"
+            },
+            {
+                "name1": "SOUVIGNON VIERIS VIE DI ROMANS 2020 - BIANCO FRIULI",
+                "name2": "Sauvignon blanc 100% 2020, 14,5% alcol vol.",
+                "price": "€ 45,00 bottiglia"
+            },
+            {
+                "name1": "CATENA ALTA CHARDONNAY - BIANCO ARGENTINO",
+                "name2": "CHARDONNAY ARGENTINO, 14% alcol vol.",
+                "price": "€ 45,00 bottiglia"
+            },
+            {
+                "name1": "MALVASIA ISTRIANA MIKLUS Collio doc Draga winery",
+                "name2": "ORANGE WINE floreale e fruttato con sentore di pesca, albicocca, susina, miele di acacia ,sapido e minerale 15,5% alcol vol.",
+                "price": "€ 48,00 bottiglia"
+            }
+        ],
+        "VINI FRIZZANTI (possibili allergeni: solfiti)": [
+            {
+                "name1": "BOLLICINO Brut (imbottigliato da Consorzio birre)",
+                "name2": "Spumante brut ,chardonnay 100% 12,5 % alcol vol. (fine ,persistente,vivace)",
+                "price": "€ 18,00 bottiglia"
+            },
+            {
+                "name1": "PANDEMONIO EXTRA BRUT ROSE'",
+                "name2": "9 mesi sui lieviti, fruttato e fresco, sapore sapido 12,5 % alcol vol.",
+                "price": "€ 25,00 bottiglia"
+            },
+            {
+                "name1": "METODO CLASSICO Cantina TAIA",
+                "name2": "Spumante Pinot nero 100% 12,5 % alcol vol.",
+                "price": "€ 29,50 bottiglia"
+            },
+            {
+                "name1": "RIBOLLA GIALLA Metodo classico Cantina Le favole",
+                "name2": "Spumante extra brut metodo classico 12,5 % alcol vol. (fine ,persistente,secco,vivace)",
+                "price": "€ 33,00 bottiglia"
+            },
+            {
+                "name1": "MONBULLAE Metodo classico Pas Dose' Cantina Hic et Nunc",
+                "name2": "Profumo intenso di crosta di pane, fiori bianchi, nocciola tostata 12,5 % alcol vol. (fine ,persistente,secco,vivace)",
+                "price": "€ 35,00 bottiglia"
+            },
+            {
+                "name1": "CREMANT D'ALSACE BRUT NATURE KOEHLY",
+                "name2": "Uve riesling metodo champenois 24 mesi. note di limone e agrumi.12% Vol.",
+                "price": "€ 35,00 bottiglia"
+            },
+            {
+                "name1": "PINOT NERO BRUT “BLANC DE NOIR” MILLESIMATO Cantina Il Poggiolo",
+                "name2": "Spumante metodo classico pinot nero 100% -13 % alcol vol. (note fruttate e floreali)",
+                "price": "€ 35,00 bottiglia"
+            },
+            {
+                "name1": "SPUMANTE BRUT CASTELLO DEL TREBIO 30 MESI SUI LIEVITI",
+                "name2": "Chardonnay 70%, Trebbiano 30%. aromi fruttati, in particolare di agrumi e frutta a polpa gialla.12,5% Vol.",
+                "price": "€ 38,50 bottiglia"
+            },
+            {
+                "name1": "BLANC DE BLANCS IGT EXTRA BRUT BIO PECORINO Cantina Cossignani",
+                "name2": "Aromi di freschi mele verdi, delicate fiori bianchi e fini note agrumate METODO CHAMPENOISE 13 % vol.",
+                "price": "€ 45,00 bottiglia"
+            },
+            {
+                "name1": "BLANC DE BLANCS METODO CLASSICO PAS DOSE' BIO CHARDONNAY Cantina Cossignani",
+                "name2": "Sentori di biscotti al burro e pietra bagnata, seguiti da note di frutta a nocciolo. METODO CHAMPENOISE 13 % vol.",
+                "price": "€ 59,00 bottiglia"
+            },
+            {
+                "name1": "FRANCIACORTA DOCG BOKE' NOIR ROSE' PAS DOSE' MILLESIMATO 2019 Cantina Villa",
+                "name2": "36 mesi sui lieviti , ribes e lampone, ciliegia e agrumi con note minerali, sapido, vivace,13 % vol.",
+                "price": "€ 65,00 bottiglia"
+            }
+        ],
+        "VINI DA DESSERT E MEDITAZIONE (possibili allergeni: solfiti)": [
+            {
+                "name1": "FILARI DI LUCE Cantina Ca' du Ruija",
+                "name2": "VINO BIANCO PRODOTTO DA UVE AROMATICHE , VINO DOLCE. 6 % Vol.",
+                "price": "€ 45,00 bottiglia - 700 ml"
+            },
+            {
+                "name1": "STREVI PASSITO DOC Cantina Ca' du Ruija (Presidio slow food)",
+                "name2": "VINO BIANCO PRODOTTO DA UVE AROMATICHE , 14 % Alc Vol.",
+                "price": "€ 45,00 bottiglia - 375 ml"
+            },
+            {
+                "name1": "LE COLOMBARE 2018 Cantina Pieropan",
+                "name2": "Recioto di soave classico 2018 - 100% garganega 12%Alc vol sentori di frutta matura dolce e non dolce,",
+                "price": "€ 30,00 bottiglia - 500 ml"
+            }
+        ],
+        "BIBITE": [
+            {
+                "name1": "COCA COLA LATTINA",
+                "name2": "33 cl",
+                "price": "€ 4,00"
+            },
+            {
+                "name1": "COCA COLA ZERO LATTINA",
+                "name2": "33 cl",
+                "price": "€ 4,00"
+            },
+            {
+                "name1": "ARANCIATA BOTTIGLIA",
+                "name2": "33 cl",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "CHINOTTO BOTTIGLIA",
+                "name2": "33 cl",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "SUCCO D'ANANAS BICCHIERE",
+                "name2": "33 cl",
+                "price": "€ 4,00"
+            },
+            {
+                "name1": "ACQUA NATURALE O GASSATA",
+                "name2": "50 cl",
+                "price": "€ 1,50"
+            }
+        ],
+        "BOTTIGLIE SPECIALI ACIDE E BARLEY WINE (possibili allergeni: glutine)": [
+            {
+                "name1": "SAISON X LAMBIC Dansaert del Brussels Beer Project",
+                "name2": "Realizzata con 85% Saison e 15% Lambic, viene luppolato con luppoli americani, 5,00% Vol.",
+                "price": "Bottiglia 0,375 lt € 13,50"
+            },
+            {
+                "name1": "CIDER LAMBIC Dansaert del Brussels Beer Project",
+                "name2": "La co-fermentazione di lambic con il succo di mele e pere invecchiato botti per 5 mesi. 7,00% Vol.",
+                "price": "Bottiglia 0,75 lt € 25,50"
+            },
+            {
+                "name1": "RHUB-ELLE Birrificio Lambiek Fabriek",
+                "name2": "Birra alla frutta a base di lambic con l'aggiunta di rabarbaro fresco 5,00% Vol.",
+                "price": "Bottiglia 0,750 lt € 25,00"
+            },
+            {
+                "name1": "BRETT-ELLE Birrificio Lambiek Fabriek",
+                "name2": "Lambic affinatO in botti di rovere, fragranze fruttate legno persistente nel retrogusto., 5,5% Vol.",
+                "price": "Bottiglia 0,375 lt € 13,50"
+            },
+            {
+                "name1": "BRETT-ELLE Birrificio Lambiek Fabriek",
+                "name2": "Lambic affinato in botti di rovere, fragranze fruttate legno persistente nel retrogusto., 5,5% Vol.",
+                "price": "Bottiglia 0,750 lt € 24,50"
+            },
+            {
+                "name1": "BRETT-ELLE Birrificio Lambiek Fabriek",
+                "name2": "Lambic affinatO in botti di rovere, fragranze fruttate legno persistente nel retrogusto., 5,5% Vol.",
+                "price": "Bottiglia 0,375 lt € 13,50"
+            },
+            {
+                "name1": "ORIGIN ELLE SPORTY geuze Birrificio Lambiek Fabriek",
+                "name2": "Lambic morbido ricorda lo champagne; acido, secco e pulito. 6,5% Vol.",
+                "price": "Bottiglia 0,375 lt € 14,50"
+            },
+            {
+                "name1": "BOON OUDE GEUZE Birrificio BOON",
+                "name2": "Miscela di lambic che maturano per 1, 2 e 3 anni in botti di rovere 7% Vol.",
+                "price": "Bottiglia 0,375 lt € 10,50"
+            },
+            {
+                "name1": "VIELLE PROVISION Birrificio De Ranke",
+                "name2": "Sour wild Ale fragranze fruttate ed agrumate ,sentori vinosi,legnosi, 7,5% Vol.",
+                "price": "Bottiglia 0,750 lt € 22,50"
+            },
+            {
+                "name1": "BOON OUDE GEUZE Birrificio BOON",
+                "name2": "Miscela di lambic che maturano per 1, 2 e 3 anni in botti di rovere 7% Vol.",
+                "price": "Bottiglia 0,750 lt € 16,50"
+            },
+            {
+                "name1": "MANSUETO 2022 Birrificio Crak",
+                "name2": "Barley wine invecchiatia per un anno in botti di Whisky ed altri tre anni in botti di Rum Caroni 12%Alc vol",
+                "price": "Bottiglia 0,375 lt € 15,00"
+            },
+            {
+                "name1": "MANSUETO 2023 Birrificio Crak",
+                "name2": "Barley wine invecchiatia per un anno in botti di Whisky ed altri tre anni in botti di Rum Caroni 12%Alc vol",
+                "price": "Bottiglia 0,375 lt € 13,5"
+            },
+            {
+                "name1": "TAKE ME HOME Birrificio Crak",
+                "name2": "Imperial Stout 11 % Vol",
+                "price": "Bottiglia 0,375 lt € 13,5"
+            },
+            {
+                "name1": "MANSUETO RISERVA CHATEAU MARGAUX 2019 DA 37,5 CL (Bottiglia in cassetta di legno)",
+                "name2": "Barley wine invecchiatia per 3 anni in botti di Chateau Margaux ed altri 2 anni in bottiglia 13%Alc vol",
+                "price": "Bottiglia 0,375 lt € 38,00"
+            },
+            {
+                "name1": "COCOBANANA Birrificio Crak",
+                "name2": "Whisky Barrel Aged Pastry Stout 12 % Vol",
+                "price": "Bottiglia 0,375 lt € 13,5"
+            },
+            {
+                "name1": "CANTINA ARANCE Birrificio Crak",
+                "name2": "Blend di sour wild ale in barrique di Chardonnay di Borgogna con arance 12 % Vol",
+                "price": "Bottiglia 0,375 lt € 14,5"
+            },
+            {
+                "name1": "CANTINA VIA dei COLLI Birrificio Crak",
+                "name2": "Italian grape ale mixed fermentation 8,5% vol",
+                "price": "Bottiglia 0,375 lt € 14,5"
+            },
+            {
+                "name1": "ROSE' DE GAMBRINUS Birrificio Cantillon",
+                "name2": "Birra prodotta con diverse miscele di Lambic e l' aggiunta di lamponi freschi.note acidule, fresche 5 % Alc vol",
+                "price": "Bottiglia 0,75 lt € 35"
+            },
+            {
+                "name1": "OUDE GEUZE (8/7/2021) Birrificio 3 Founteinen",
+                "name2": "Oude geuze blend una miscela di lambic invecchiati rispettivamente 1,2 e 3 anni. 6,1% Alc vol",
+                "price": "Bottiglia 0,75 lt € 35"
+            }
+        ]
+    },
+    "MANGIA BENE": {
+        "FUORI MENU': CHORIZO DI PATANEGRA": [
+            {
+                "name1": "FUORI MENU' 1: SABROSO",
+                "name2": "PANINO CON: CHORIZO E FORMAGGIO SEMISTAGIONATO (allergeni:1,7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FUORI MENU' 2: DELICIOSO",
+                "name2": "PANINO CON: CHORIZO, FORMAGGIO SEMISTAGIONATO, POMODORI SECCHI,PATè DI OLIVE TAGGIASCHE (allergeni:1, 7,12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FUORI MENU' 3: EL GLOTON",
+                "name2": "PANINO CON: CHORIZO, FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA ALGERINA(allergeni:1,3,12)",
+                "price": "€ 13,50"
+            }
+        ],
+        "TAPAS E STUZZICHERIE": [
+            {
+                "name1": "♥SPECIALITA': CAPRINO NOBILE DI MONTE JUGO",
+                "name2": "CAPRINO NOBILE DI MONTE JUGO FRESCO E AFFINATO AL VINO ROSSO",
+                "price": "€ 13.00"
+            },
+            {
+                "name1": "CRAPIATA DEI SASSI",
+                "name2": "MISTO LEGUMI TOSTATI: SPECIALITA' LUCANA (fagioli, soia, fave, ceci neri, cicerchie, piselli)allergeni 1, 6, 13)",
+                "price": "€ 5,50"
+            },
+            {
+                "name1": "PEPERONI CRUSCHI",
+                "name2": "PEPERONI CRUSCHI: SPECIALITA' LUCANA",
+                "price": "€ 5,50"
+            },
+            {
+                "name1": "TARALLINI AL FINOCCHIO",
+                "name2": "CIOTOLA DI TARALLINI (allergeni 1-12)",
+                "price": "€ 3,50"
+            },
+            {
+                "name1": "TARALLINI AL POMODORO SECCO",
+                "name2": "CIOTOLA DI TARALLINI (allergeni 1-12)",
+                "price": "€ 3,50"
+            },
+            {
+                "name1": "TARALLI CIPOLLA E UVETTA",
+                "name2": "CIOTOLA DI TARALLI (allergeni 1-12)",
+                "price": "€ 3,50"
+            },
+            {
+                "name1": "OLIVE INFORNATE",
+                "name2": "OLIVE NERE LUCANE AL FORNO (allergeni 12)",
+                "price": "€ 5,50"
+            },
+            {
+                "name1": "SARDINE DI ANZIO ALL'OLIO DOLIVA",
+                "name2": "sardine all'olio d'oliva servite con pane tostato (allergeni:1-4)",
+                "price": "€ 10.50"
+            },
+            {
+                "name1": "SARDINE DI ANZIO PICCANTI",
+                "name2": "sardine di Anzio piccanti in olio d'oliva con pane tostato (allergeni:1-4)",
+                "price": "€ 10,50"
+            },
+            {
+                "name1": "OLIVE BELLA DI CERIGNOLA",
+                "name2": "ciotola di olive pugliesi top",
+                "price": "€ 5,50"
+            }
+        ],
+        "NACHOS": [
+            {
+                "name1": "CIOTOLA Nachos con salsa al FORMAGGIO VEGANO (piccante) (VEGAN OK)",
+                "name2": "ciotola nachos con salsa VEGANA gusto leggermente piccante (allergeni: 3-7-8-10)",
+                "price": "€ 7.00"
+            },
+            {
+                "name1": "CIOTOLA Nachos con salsa ALGERINA (piccante)",
+                "name2": "ciotola nachos con salsa ALGERINA (allergeni: 3-7-8-10)",
+                "price": "€ 7.00"
+            },
+            {
+                "name1": "Nachos TIPICOS",
+                "name2": "con Formaggella artigianale fusa (allergeni: 7)",
+                "price": "€ 11.50"
+            },
+            {
+                "name1": "Nachos CALIENTI",
+                "name2": "con formaggella artigianale e tabasco (allergeni: 7)",
+                "price": "€ 11.50"
+            },
+            {
+                "name1": "Nachos ME CALA",
+                "name2": "con formaggella artigianale , zola, tabasco, peperoni corno (allergeni: 7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "Nachos LUGANEGA",
+                "name2": "con formaggella artigianale , zola, LUGANEGA (allergeni: 7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "Nachos PORCHETTA",
+                "name2": "con formaggella artigianale , zola, PORCHETTA (allergeni: 7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "Nachos STROMBOLI (piccanti)",
+                "name2": "con formaggella artigianale , zola, NDUJA CALABRESE (allergeni: 7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "SALSA A PARTE",
+                "name2": "ciotola di salsa a scelta (possibili allergeni 3-7-10)",
+                "price": "€ 2.50"
+            }
+        ],
+        "CROSTONI": [
+            {
+                "name1": "♥CROSTONE SPECIAL BIGUSTO 1: BRESAOLA RUBIA GALLEGA / CHORIZO IBERICO",
+                "name2": "RUBIA GALLEGA / Chorizo iberico (allergeni:1)",
+                "price": "€ 15.00"
+            },
+            {
+                "name1": "♥CROSTONE SPECIAL BIGUSTO 2: FINOCCHIONA DI CINTA / CHORIZO IBERICO",
+                "name2": "FINOCCHIONA DI CINTA / Chorizo iberico (allergeni:1)",
+                "price": "€ 15.00"
+            },
+            {
+                "name1": "CROSTONE GIORGY (VEGAN OK)",
+                "name2": "CROSTONE CON PEPERONI E MELANZANE DI NONNA MARIA (allergeni:1-12)",
+                "price": "€ 10,50"
+            },
+            {
+                "name1": "CROSTONE SILVANO",
+                "name2": "crostone con formaggio fresco e alici (allergeni:1-4-7)",
+                "price": "€ 10.50"
+            },
+            {
+                "name1": "CROSTONE ZELE A DIETA",
+                "name2": "crostone con ZOLA, PEPERONI, TABASCO (allergeni:1-7-12)",
+                "price": "€ 10.50"
+            },
+            {
+                "name1": "CROSTONE GREG LUGANEGA",
+                "name2": "crostone con LUGANEGA DI MONZA (allergeni:1-7)",
+                "price": "€ 12.50"
+            },
+            {
+                "name1": "CROSTONE LUGANEGA E ZOLA",
+                "name2": "crostone con LUGANEGA E ZOLA (allergeni:1-7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CROSTONE EL DIABLO",
+                "name2": "crostone con LUGANEGA, ZOLA, BOMBA, PEPERONE LOMBARDO (allergeni:1-7-12)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CROSTONE LARDO E MIELE",
+                "name2": "crostone con LARDO PATANEGRA E MIELE (allergeni:1)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CROSTONE DUETTO",
+                "name2": "MEZZO CON CRUDO - MEZZO CON LARDO DI PATANEGRA (allergeni:1)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CROSTONE CAPRETTA",
+                "name2": "crostone con crudo e formaggio fresco (allergeni:1-7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CROSTONE FALERFO",
+                "name2": "crostone con bresaola tirolese , formaggio fresco spalmabile, olio evo (allergeni:1-7)",
+                "price": "€ 13.50"
+            }
+        ],
+        "TAGLIERI DI SALUMI E FORMAGGI": [
+            {
+                "name1": "TAGLIERE SALUMI E FORMAGGI (x 2/3 persone)",
+                "name2": "tagliere salumi e formaggi misti+ PANE (allergeni 1-7-8)",
+                "price": "€ 37,00"
+            },
+            {
+                "name1": "TAGLIERE solo SALUMI (x 2/3 persone)",
+                "name2": "tagliere salumi + PANE (allergeni 1-8)",
+                "price": "€ 37,00"
+            },
+            {
+                "name1": "TAGLIERE FORMAGGI",
+                "name2": "tagliere di formaggi misti con miele + pane (allergeni:1-7)",
+                "price": "€ 25.00"
+            },
+            {
+                "name1": "TAGLIERE FORMAGGI VEGANI (VEGAN OK)",
+                "name2": "tagliere di formaggi VEGANI + pane (allergeni:1-8-11-13)",
+                "price": "€ 18.00"
+            },
+            {
+                "name1": "EXTRA",
+                "name2": "Pane extra € 2.50Salsa per formaggi extra € 3,00Miele extra € 2.50Pane senza Glutine € 3,00",
+                "price": ""
+            }
+        ],
+        "PANINI CON MORTADELLA AFFUMICATA": [
+            {
+                "name1": "IL MORTADELLA",
+                "name2": "PANINO CON TANTA MORTAZZA (allergeni:1,8)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "BOMBA",
+                "name2": "PANINO CON MORTADELLA + FORMAGGIO SEMISTAGIONATO, MELANZANE, BOMBA CALABRESE (allergeni:1-7-8-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "CERMINARA",
+                "name2": "PANINO CON MORTADELLA + FORMAGGELLA, SALSA BOSCAIOLA E SALSA ALGERINA (allergeni:1-3-7-8-10-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "CAIROLY FAMILY",
+                "name2": "PANINO CON MORTADELLA, ZUCCHINE, POMODORI SECCHI, SDALSA ROSA (allergeni:1-3-8-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FOCOSO",
+                "name2": "PANINO CON MORTADELLA, FORMAGGIO SEMISTAGIONATO - NDUJA CALABRESE, PEPERONI (allergeni: 1-7-8-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "GOGO",
+                "name2": "PANINO CON MORTADELLA, FORMAGGELLA, POMODORI SECCHI (allergeni: 1-7-8-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MARCOLINO",
+                "name2": "PANINO CON MORTADELLA+ TOMA AL TARTUFO (allergeni: 1-7-8)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MAGUTT",
+                "name2": "PANINO CON MORTADELLA E ZOLA (allergeni: 1-7-8)",
+                "price": "€ 13,50"
+            }
+        ],
+        "PANINI CON SALAME PIACENTINO": [
+            {
+                "name1": "SALAMELLO",
+                "name2": "PANINO CON SALAME (allergeni:1)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "CONTADINO",
+                "name2": "PANINO CON SALAME + FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA AI PEPERONI (allergeni:1-3-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MURAZZO",
+                "name2": "PANINO CON SALAME + FORMAGGIO SEMISTAGIONATO (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "TRIFULOT",
+                "name2": "PANINO CON SALAME + TOMA PIEMONTESE AL TARTUFO (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "LAILUZZA",
+                "name2": "PANINO CON SALAME, FUNGHI, SALSA BOSCAIOLA(allergeni: 1-3-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "SANTUZZA",
+                "name2": "PANINO CON SALAME, POMODORI SECCHI, MAIONESE (allergeni: 1-3-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "LUCIFERO",
+                "name2": "PANINO CON SALAME, FORMAGGIO SEMISTAGIONATO, NDUJA CALABRESE (allergeni: 1-3)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "ZULU'",
+                "name2": "PANINO CON SALAME, ZOLA E PEPERONI (allergeni: 1-7-12)",
+                "price": "€ 13,50"
+            }
+        ],
+        "PANINI CON PROSCIUTTO CRUDO LANGHIRANO 24 MESI": [
+            {
+                "name1": "IL CRUDO",
+                "name2": "GRAN CRUDO IN PUREZZA (allergeni:1)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "L'ANTICO",
+                "name2": "PANINO CON CRUDO, FORMAGGIO FRESCO, MELANZANE, SALSA BOSCAIOLA (allergeni:1,7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "JOLLY",
+                "name2": "CRUDO + TOMA PIEMONTESE AL TARTUFO (allergeni:1,7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "STORICO",
+                "name2": "CRUDO + FORMAGGIO SEMISTAGIONATYO, FUNGHI, SALSA ROSA (allergeni:1,3,7,12)",
+                "price": "€ 14,50"
+            },
+            {
+                "name1": "CAMPAGNOLO",
+                "name2": "PROSCIUTTO CRUDO, FORMAGGIO SEMISTAGIONATO, POMODORI SECCHI, FUNGHI, MAIO (allergeni:1-3-7-12)",
+                "price": "€ 14,50"
+            },
+            {
+                "name1": "ROSELLO",
+                "name2": "CRUDO, FORMAGGIO FRESCO, POMODORI SECCHI, SALSA ROSA (allergeni:1-3-7-12)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "CAMPESTRE",
+                "name2": "CRUDO, FORMAGGIO FRESCO, FUNGHI (allergeni:1-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "DELICATO",
+                "name2": "CRUDO, FORMAGGELLA, SALSA BOSCAIOLA (allergeni:1-3-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FELIX THE PUCK",
+                "name2": "CRUDO, ZOLA E MIELE (allergeni:1-7)",
+                "price": "€ 13.50"
+            },
+            {
+                "name1": "PUMMAROLO",
+                "name2": "CRUDO, FORMAGGELLA, POMODORI SECCHI (allergeni:1-7-12)",
+                "price": "€ 13,50"
+            }
+        ],
+        "PANINI CON BRESAOLA TIROLESE": [
+            {
+                "name1": "LISCIO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, GRANA, OLIO EVO (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "ALTERNATIVO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FORMAGGIO FRESCO, ZUCCHINE GRIGLIATE (allergeni:1-3-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "BOSCAIOLO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FUNGHI, SALSA BOSCAIOLA (allergeni:1-3-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "PIEMONTESE",
+                "name2": "PANINO CON BRESAOLA TIROLESE, TOMA AL TARTUFO, SALSA BOSCAIOLA (allergeni:1-3-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "CAPRICCIOSO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA ROSA (allergeni:1-3-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FITNESS",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FORMAGGIO FRESCO, CETRIOLO AGRODOLCE, SENAPE (allergeni:1-7-10-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MONTANO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FORMAGGIO FRESCO, FUNGHI (allergeni:1-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "PETER",
+                "name2": "PANINO CON BRESAOLA TIROLESE, FORMAGGIO FRESCO (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "RIVIERA",
+                "name2": "PANINO CON BRESAOLA TIROLESE, GRANA A SCAGLIE, POMODORI SECCHI (allergeni:1-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "ZOLANDO",
+                "name2": "PANINO CON BRESAOLA TIROLESE, ZOLA, POMODORI SECCHI (allergeni:1-7-12)",
+                "price": "€ 13,50"
+            }
+        ],
+        "PANINI CON PORCHETTA DI ARICCIA IGP": [
+            {
+                "name1": "ALGERINO",
+                "name2": "PANINO CON PORCHETTA , FORM. SEMISTAGIONATO, PEPERONI, SALSA ALGERINA (allergeni:1-7)",
+                "price": "€ 14,50"
+            },
+            {
+                "name1": "BICOLORE",
+                "name2": "PANINO CON PORCHETTA E ZOLA (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MAMMOLO",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, CETRIOLI AGRODOLCI, SENAPE (allergeni:1-7-10)",
+                "price": "€ 14,00"
+            },
+            {
+                "name1": "IL CAFONE",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, CIPOLLA FRITTA CROCCANTE, BBQ (allergeni:1-7)",
+                "price": "€ 14,50"
+            },
+            {
+                "name1": "MARCHIGIANO",
+                "name2": "PANINO CON PORCHETTA,TOMA AL TARTUFO (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "PEPPER PIG",
+                "name2": "PANINO CON PORCHETTA E PEPERONI GRIGLIATI SOTTOLIO (allergeni:1-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "IL PIACIONE",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, SALSA ROSA (allergeni:1-3-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MEDITERRANEO",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, POMODORI SECCHI, SALSA ROSA (allergeni:1-3-7-12)",
+                "price": "€ 14,50"
+            },
+            {
+                "name1": "SUPERGRISSI",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA BOSCAIOLA (allergeni:1-3-7-12)",
+                "price": "€ 14.50"
+            },
+            {
+                "name1": "VULCANO",
+                "name2": "PANINO CON PORCHETTA, FORMAGGIO SEMISTAGIONATO, NDUJA CALABRESE (allergeni:1-7)",
+                "price": "€ 13.50"
+            }
+        ],
+        "PANINI CON LUGANEGA DI MONZA": [
+            {
+                "name1": "PHIL COLLINS",
+                "name2": "PANINO CON LUGANEGA E ZOLA (allergeni:1)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "BRIANZOLO",
+                "name2": "PANINO CON LUGANEGA ZOLA E POMODORI SECCHI (allergeni:1-7)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "SALCICCIO",
+                "name2": "PANINO CON LUGANEGA, PEPERONI, TABASCO (allergeni: 1-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "PINOCCHIO",
+                "name2": "PANINO CON LUGANEGA, GRANA, PEPERONI LOMBARDI (allergeni: 1-7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "MANGIAFUOCO (PICCANTE)",
+                "name2": "PANINO CON LUGANEGA, ZOLA, NDUJA CALABRESE (allergeni: 1-7)",
+                "price": "€ 13,50"
+            }
+        ],
+        "PANINI VEGGIE E VEGAN": [
+            {
+                "name1": "ASPROMONTE (VEGAN OK)",
+                "name2": "PANINO CON BURGER VEG, MELANZANE, PEPERONI, BOMBA CALABRESE (piccante) - (allergeni 1-6-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "ORTOLINO (VEGAN OK)",
+                "name2": "PANINO CON BURGER VEG, POMODORI SECCHI, FUNGHI, SALAS BBQ - (allergeni 1-6-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "GOTICO (VEGAN OK)",
+                "name2": "PANINO CON BURGER VEG, ZUCCHINE GRIGLIATE, SALSA AL VEGAN-FORMAGGIO- (allergeni 1-6-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "VEGETARIAN CRISPY",
+                "name2": "PANINO CON BURGER VEG, FORMAGGIO SEMISTAGIONATO, SALSA SPICY, CIPOLLA CROCCANTE (allergeni 1-6-7-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "FRESCOBALDO",
+                "name2": "PANINO CON TOMA AL TARTUFO, FUNGHI E BOSCAIOLA (allergeni 1-3-7-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "AUTOGRILL FRANCESE",
+                "name2": "FORMAGGIO SEMISTAGIONATO, POMODORI SECCHI, PEPERONI LOMBARDI, SENAPE (allergeni:1-7-10-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "GOLOSO",
+                "name2": "FORMAGGIO SEMISTAGIONATO, FUNGHI, POMODORI SECCHI, SALSA ROSA (allergeni:1-3-7-12)",
+                "price": "€ 12,00"
+            },
+            {
+                "name1": "SPAGNOLO",
+                "name2": "FORMAGGELLA, POMODORI SECCHI, MELANZANE (allergeni:1-7-12)",
+                "price": "€ 12,00"
+            }
+        ]
+    },
+    "DOPO CENA": {
+        "DOLCI": [
+            {
+                "name1": "TORTA CAPRESE",
+                "name2": "FETTA DI TORTA ARTIGIANALE (allergeni:1-3-7-8)",
+                "price": "€ 6,50"
+            },
+            {
+                "name1": "CROSTATA AL RIBES",
+                "name2": "FETTA DI TORTA ARTIGIANALE (allergeni:1-3-7-8)",
+                "price": "€ 6,50"
+            },
+            {
+                "name1": "TORTA TORRONE E CIOCCOLATO",
+                "name2": "FETTA DI TORTA ARTIGIANALE (allergeni:1-3-7-8)",
+                "price": "€ 6,50"
+            },
+            {
+                "name1": "BACI DEL CHERUBINO",
+                "name2": "BACI NOCCIOLA E CIOCCOLATO (allergeni:1-3-7-8)",
+                "price": "€ 6,50"
+            },
+            {
+                "name1": "BISCOTTI CIOCCOLATO E SALE DI CERVIA (VEGAN OK)",
+                "name2": "BISCOTTI VEGANI (allergeni:1-6-8)",
+                "price": "€ 6,50"
+            }
+        ],
+        "LIQUORI DEL CONSORZIO": [
+            {
+                "name1": "Chupito singolo liquore Consorzio",
+                "name2": "1,5 cl.",
+                "price": "€ 1,50"
+            },
+            {
+                "name1": "LELLO CARAMELLO",
+                "name2": "Liquore cremoso alla panna cotta e caramello 17% (non adatto ai celiaci)",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "EZECHIELE LUPPOLO AMARO",
+                "name2": "Amaro con luppolo 30%",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "COCCO SIFFREDI",
+                "name2": "Liquore cremoso al cocco 21%",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "CAMOMILLA ALCOLICA",
+                "name2": "delizioso liquorino alla camomilla, 0,5 cl, 18% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "CHANEL N° 5",
+                "name2": "Liquore a base di cannella 18% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "DULCIS IN FUNDO",
+                "name2": "amaro d'erbe, 25% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "SAMBUCA DOTTORESSA GRASSI",
+                "name2": "sambuca 40% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "LIQUIRIZIA DEL CONSORZIO",
+                "name2": "liquore alla liquirizia 30% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "PIPERLIZIA",
+                "name2": "liquore alla liquirizia con peperoncino piccante 30% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "ARANCELLO",
+                "name2": "liquore all'arancia 32% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "BOMBARDINO",
+                "name2": "liquore cremoso a base d'uovo",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "PISTACCHIO",
+                "name2": "liquore cremoso al pistacchio 21% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "NOCINO MERLINO",
+                "name2": "Liquore ootenuto dall'infuso di malli di noci 40% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "MELONINO",
+                "name2": "Liquore cremoso al melone 21% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "BANANINO",
+                "name2": "Liquore cremoso alla banana 21% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "AMARO FELICIONE",
+                "name2": "Liquore digestivo con erbe aromatiche della valcamonica e luppolo 21% vol",
+                "price": "€ 4,50"
+            }
+        ],
+        "LIQUORI E AMARI": [
+            {
+                "name1": "AMARO RABBIT AL RADICCHIO ROSSO",
+                "name2": "Bitter italiano ,al radicchio rosso piccantino 26,2% vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AMARO TERRA",
+                "name2": "Note di terra date dalle radici e della corteccia di quercia 33,3% vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AMARO DELLE OCHE",
+                "name2": "Trae linfa da un profumo afrodisiaco, agrumi dolci e lavanda,piccantino ,cacao e fico, amaricante sul finale.25%vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AMARO SETTEMEZZO DIGESTIVO",
+                "name2": "Liquore al carciofino violetto di San Luca corroborante 21 % vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "AMARO FUNDEGHERA 1939",
+                "name2": "Rabarbaro,china ,genziana, liquirizia 31 % vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AMARO SETA del Lago di Como",
+                "name2": "Con more di gelso,arancia amara , china e genziana 30 % vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AMARO NAZIONALE",
+                "name2": "Abase di carciofo, arancia e caffe' 28 % vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "NOCINO RISERVA SPECIALE BIO Distilleria Santa Chiara",
+                "name2": "Prodotto con malli di noce, invecchiato 5 anni in botti di rovere 40 % vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "AQUAVIT BAREKSTEN BOTANICAL",
+                "name2": "L'acquavite bevanda scandinava da distillazione patate piu cumino e aneto 40% vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "CHUPITO LIQUORE",
+                "name2": "chiedere tipologie, 2,5 cl",
+                "price": "da € 2,50 a € 6,00"
+            }
+        ],
+        "WHISKY SCOZZESI TORBATI": [
+            {
+                "name1": "MOSAIC 2007 CAOL ILA single malt 706 bottiglie prodotte",
+                "name2": "Assemblaggio di due botti: n° 322176 e 322180,morbido e dolce, armonioso, con percezione di alghe e fumo di torba 45%",
+                "price": "€ 23,5 bicchiere da 0,5 cl € 12 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SCARABUS 10 yo single malt Distillery (?segreta?)Islay",
+                "name2": "Single malt Scotch whisky torbato invecchiato per almeno 10 anni in un mix di botti ex-bourbon,46%",
+                "price": "€ 12 bicchiere da 0,5 cl € 6,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SMOKEHEAD SINGLE MALT Distillery Jan Mcleod",
+                "name2": "Carattere vigoroso e molto torbato, sentori freschi e marini , note speziate, piccanti e affumicate 43%",
+                "price": "€ 8,50 bicchiere da 0,5 cl € 5,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SMOKEHEAD RUM CASK REBEL",
+                "name2": "Whisky invecchiato in botti di rum caraibico. Torba intensa, ammorbidito da note di frutta caramellata. 46% alc vol",
+                "price": "€ 12,5 bicchiere da 0,5 cl € 6,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SMOKEHEAD TEQUILA CASK TERMINADO",
+                "name2": "Fortemente torbato invecchiato in botti di rovere bianco ex-bourbon, finito in botti Tequila invecchiata. 43% alc vol",
+                "price": "€ 12,50 bicchiere da 0,5 cl € 6,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "KILCHOMAN MACHIR BAY",
+                "name2": "Maturato sia in botti ex-bourbon che ex-sherry. 46% frutta tropicale, fumo di torba e vaniglia.",
+                "price": "€ 11,50 bicchiere da 0,5 cl € 6,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "KILCHOMAN COGNAC 2023 LIMITED EDITION (ISLAY)",
+                "name2": "Affinato in botti di Cognac francese 50% alc vol intenso e torbato, dalle note di miele, burro salato, uvetta e nocciola",
+                "price": "€ 18 bicchiere da 0,5 cl € 9 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "KILCHOMAN SHERRY FINO CASK MATURED (ISLAY) Single malt",
+                "name2": "Invecchiato esclusivamente in botti ex-sherry Fino della cantina spagnola Bodega 50%Alc vol",
+                "price": "€ 18 bicchiere da 0,5 cl € 9 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LONGGROW PEATED Distilleria Springbank (Campbeltown)",
+                "name2": "single malt invecchiato in botti ex-bourbon, un whisky torbato e affumicato con sentori marini, 46% alc vol",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LONGGROW 18 YEARS OLD Distilleria Springbank (Campbeltown)",
+                "name2": "Invecchiato 18 anni in botti ex-sherry ed ex-bourbon è complesso con profonde note torbate, 46% alc vol",
+                "price": "€ 30 bicchiere da 0,5 cl € 15 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "ISLAY MIST PEATED MacDuff International Ltd (Glasgow)",
+                "name2": "Un Blended Premium di whisky scozzesi , il più distintivo dei quali è Laphroaig Single islay Malt. 40% alc vol",
+                "price": "€ 7,50 bicchiere da 0,5 cl €4,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LAPHROAIG QUARTER CASK",
+                "name2": "Invecchia 5 anni in piccole botti. Sentori di cocco e banana ,affumicatura che ricorda i falò. 48% alc vol",
+                "price": "€ 9 bicchiere da 0,5 cl €4,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LAPHROAIG LORE 1815",
+                "name2": "Contiene whisky invecchiati tra i 7 e i 21 anni,maturato in mix di botti first fill ex-bourbon ed ex-sherry Oloroso.. 48% alc vol",
+                "price": "€ 19,5 bicchiere da 0,5 cl €10 bicchiere da 0,25 cl"
+            }
+        ],
+        "WHISKY SCOZZESI LISCI E PICCANTI": [
+            {
+                "name1": "ROYAL BRAKLA 14 y.o. 2011 CONSORZIO BIRRE COLLECTION N2",
+                "name2": "Single malt delle H IGHLANDS invecchiato in botti di tawny porto dal2011 46,1% Alc vol",
+                "price": "€ 15 bicchiere da 0,5 cl € 7,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "GLENROTHES 17 y.o.2007 CONSORZIO BIRRE COLLECTION N3",
+                "name2": "Single malt invecchiato in botti di vino Monbazillac 53,7% Alc vol",
+                "price": "€ 18 bicchiere da 0,5 cl € 9,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SPRINGBANK 10 YEARS OLD",
+                "name2": "Single malt maturato in una combinazioni di botti di bourbon e sherry 46% Alc vol",
+                "price": "€ 12 bicchiere da 0,5 cl € 6 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SPRINGBANK 12 CASK STRENGHT 25 EDITION",
+                "name2": "70% di botti ex-bourbon e 30% ex-sherry imbottigliato al 57,2 % Alc vol",
+                "price": "€ 15 bicchiere da 0,5 cl € 7,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SPRINGBANK 18 YEARS OLD",
+                "name2": "Single con (15 ppm)di torba distillato ``due volte e mezza``,invecchiato un mix di botti sherry e bourbon 46% Alc vol",
+                "price": "€ 36 bicchiere da 0,5 cl € 18 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "INFREQUENT FLYERS CROFTENGEA 16 YEARS OLD PICCANTE",
+                "name2": "Invecchiato in PX Sherry Puncheon distillato nel 2005 a pieno grado 56,4% in 605 esemplari da Lochmond",
+                "price": "€ 23,50 bicchiere da 0,5 cl € 12 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "CHORLTON WHISKY - FAEMUSSACH 21 YEARS OLD PICCANTE",
+                "name2": "Single malt , distillato nel 2001 e maturato in botte ex bourbon solo 313 bottiglie a 56% alc vol",
+                "price": "€ 28,50 bicchiere da 0,5 cl € 14,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LIMITED EDITION 23 YEARS AGED Distillato da Ben Nevis",
+                "name2": "single malt invecchiato 23 anni 328ima bottiglia di 558 prodotte gusto unico intenso piccante, 48% alc vol",
+                "price": "€ 45 bicchiere da 0,5 cl € 22,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DUNCAN TAYLOR GLEN ELGIN 11 YEARS OLD (solo 327 bottiglie prodotte)",
+                "name2": "Ottenuto da una singola botte, al palato risulta speziato di zenzero e cannella 54,8% Alc vol (Speyside)",
+                "price": "€ 15,50 bicchiere da 0,5 cl € 8,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SAMAROLI LOCHLOMOND 1996 solo 182 bottiglie",
+                "name2": "Selezione Samaroli 25 yo cask n42954 gusto intenso e unico non torbato 55% alc vol",
+                "price": "€ 63,5 bicchiere da 0,5 cl € 32 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "MOSAIC COLLECTION CAOL ILA 2007",
+                "name2": "morbido e dolce, armonioso, con percezione di alghe e fumo di torba. 45% alc vol",
+                "price": "€ 23,5 bicchiere da 0,5 cl € 12 bicchiere da 0,25 cl"
+            }
+        ],
+        "WHISKY JAPPONESI": [
+            {
+                "name1": "MATSUI WHISKY -THE SAN-IN Ex Bourbon barrel",
+                "name2": "Aromi di vaniglia, miele, cereali e un tocco di caramello 43% Vol.",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "NIKKA COFFEY GRAIN (Jappone)",
+                "name2": "Single grain prodotto con antichi alambicchi scozzesi. È dotato di aromi esotici e fruttati, dolci e corposi 45% Alc vol",
+                "price": "€ 12 bicchiere da 0,5 cl € 6 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "NIKKA COFFEY MALT (Jappone)",
+                "name2": "Morbido con note speziate con l'aggiunta di acqua vengono fuori note di vaniglia 45% Alc vol",
+                "price": "€ 13 bicchiere da 0,5 cl € 6,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "SHINOBU PURE MALT LIGHTLY PEATED",
+                "name2": "Sentori di noci tostate e pera pepe nero e chiodi di garofano, agrumi maturi ,finale lungo e morbido. 43% Alc vol",
+                "price": "€ 11,5 bicchiere da 0,5 cl € 6 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "KURA RUM CASK FINISH",
+                "name2": "Un blended whisky giapponese con un bell’affinamento in botti di rum 40% Alc vol",
+                "price": "€ 15 € bicchiere da 0,5 cl € 7,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "KUJIRA 12 YEARS OLD SHERRY CASK (Okinawa)",
+                "name2": "Whisky di riso, affinato in botti di rovere di sherry ,intenso e speziato 40% alc vol",
+                "price": "€ 25 bicchiere da 0,5 cl € 12,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "THE CHITA SINGLE GRAIN Distilleria Suntory",
+                "name2": "Whisky di grano, invecchiato in botti di bourbon, sherry e vino,dolce e morbido con note di vaniglia, 43% Alc vol",
+                "price": "€ 8,50 bicchiere da 0,5 cl € 4,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "HIBIKI JAPANESE HARMONY Distilleria Suntory",
+                "name2": "Harmony è un blended dei migliori whisky:Hakushu, Yamazaki e Chita ,morbido e dolce con note di miele, 43% Alc vol",
+                "price": "€ 23 bicchiere 0,5 cl € 11,50 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "SINGLE MALT MIYAGIKYO Distilleria Suntory",
+                "name2": "Note fruttate di banana e albicocca e sentori floreali di ginestra.n note piccanti di zenzero, Il finale è morbido 45% Alc vol",
+                "price": "€ 13,5 bicchiere 0,5 cl € 7,00 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "SINGLE MALT YOICHI Distilleria Suntory",
+                "name2": "Note fruttate, di pesca e mela, balsamico e salatao Al palato la torba terrosa ed elegante , 45% Alc vol",
+                "price": "€ 13,5 bicchiere 0,5 cl € 7,00 bicchiere 0,25 cl"
+            }
+        ],
+        "RUM": [
+            {
+                "name1": "VIEUX LABBE' 10 Y.O. HAITI",
+                "name2": "Rum invecchiato in botti di rovere ,che donano al liquido sentori di frutta, caramello, miele e vaniglia. 43% Vol.",
+                "price": "€ 12,5 bicchiere da 0,5 cl € 6,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DIPLOMATICO RESERVA EXCLUSIVA VENEZUELA",
+                "name2": "L’invecchiamento avviene in piccole botti di rovere fino a 12 anni, molto equilibrato 43% Alc vol",
+                "price": "€ 8,5 bicchiere da 0,5 cl € 4,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "ZACAPA 23 GUATEMALA",
+                "name2": "Rum di canna da zucchero, invecchiato in botti di Bourbon, sherry e Pedro Xymenez. 43% Alc vol",
+                "price": "€ 9 bicchiere da 0,5 cl € 4,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "EL DORADO 12 YO GUYANA",
+                "name2": "Invecchiato in botti ex-bourbon, molto equilibrato e ha vinto la medaglia d’oro al Caribbean Rum Taste 43% Alc vol",
+                "price": "€ 9 bicchiere da 0,5 cl € 4,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DE PAZ 2003 SIGLE CASK RUM MARTINICA",
+                "name2": "Invecchia in botti di rovere ,bouqet fruttato , con sentori di torta di mele e con un tocco cremoso.45% Alc vol",
+                "price": "€ 20 € bicchiere da 0,5 cl € 10,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "EL DORADO 1999 PORT MOURANT GUYANA",
+                "name2": "Invecchiato 15 anni in barili ex-Bourbon,sentori di frutta matura e secca, di vaniglia e cannella, 61,4% Alc vol.",
+                "price": "€ 35,00 bicchiere da 0,5 cl € 17,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DICTATOR AU 79 RUM COLOMBIA",
+                "name2": "Invecchiato in botti ex-bourbon ed ex-sherry per 25-35 anni. Note di miele tostato, caffè colombiano, 40% alc vol",
+                "price": "€ 15 bicchiere da 0,5 cl € 7,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "PROVIDENCE RUM 2019 HAITI",
+                "name2": "Invecchiato in botti ex CARONI, intensità e complessità di aromi. 52% Alc vol",
+                "price": "€ 15,00 bicchiere da 0,5 cl € 7,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "MALECON 21 YO RESERVA IMPERIAL PANAMA",
+                "name2": "Aroma intenso di frutta secca, spezie e legno pregiato. 40% Alc vol",
+                "price": "€ 12,5 bicchiere 0,5 cl € 6,50 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "MALECON 25 YO RESERVA IMPERIAL PANAMA",
+                "name2": "Invecchiato in botti di rovere 25 anni,note fruttate di albicocca e arancio, .40% Alc vol",
+                "price": "€ 15,00 bicchiere 0,5 cl € 7,50 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "LA FAVORITE RUM BIANCO AGRICOLO MARTINICA",
+                "name2": "Eleganti note floreali al naso, accompagnate dal dolce profumo del succo di canna 50% Alc vol",
+                "price": "€ 8,50 bicchiere 0,5 cl € 4,50 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "J. BALLY 2007 BRUT DE FUT AGRICOLO MARTINICA",
+                "name2": "Invecchiato 14 anni in botti di rovere ,note legnose e speziate, con sentori di vaniglia, cassis, cacao 50,6% Alc vol",
+                "price": "€ 25 bicchiere 0,5 cl € 12,50 bicchiere 0,25 cl"
+            },
+            {
+                "name1": "NEISSON XO BATCH N3 AGRICOLE MARTINICA",
+                "name2": "Inbottigliatore indipendente full proof 57,3% Alc vol",
+                "price": "€ 35 bicchiere 0,5 cl € 17,50 bicchiere 0,25 cl"
+            }
+        ],
+        "TEQUILA E MEZCAL MEXICO 100% DE AGAVE": [
+            {
+                "name1": "TEQUILA CLASE AZUL REPOSADO",
+                "name2": "Tequila premium ,100% con agave blu,invecchiata 8 mesi in rovere, colore ambrato e aromi , vaniglia e caramello.40% Alc vol",
+                "price": "€35,00 Bicchiere 0,5 cl €20,00 Bicchiere 0,25 cl"
+            },
+            {
+                "name1": "DON FULANO REPOSADO 100% DE AGAVE BLU",
+                "name2": "Invecchiata in botti di rovere ,note speziate, i ricchi sentori di pera e di composta di ciliegie. 40% Alc vol",
+                "price": "€ 10 bicchiere da 0,5 cl € 5,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DOS AMARILLOS TEQUILA PLATA",
+                "name2": "Ricca e morbida sentore di vaniglia,note di pera e banana. Il Finale è pulito e caldo con richiami di nocciola. 40% Alc vol",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DOS AMARILLOS TEQUILA REPOSADO",
+                "name2": "Invecchiata 6 mesi in barile, note vaniglia e caramello, dal gusto caldo con sentori di quercia, cannella e nocciole. 40% Alc vol",
+                "price": "€ 16,5 bicchiere da 0,5 cl € 8,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "DOS AMARILLOS TEQUILA ANEJO",
+                "name2": "Di colore ambrato ,aromi intensi di quercia, agave e miele grazie all’invecchiamento di 18 mesi. 40% Alc vol",
+                "price": "€ 18 bicchiere da 0,5 cl € 9,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "LA GRITONA TEQUILA REPOSADO 100% DE AGAVE",
+                "name2": "Affinamento di 8 mesi in rovere, il gusto risulta erbaceo, con note di agave,finale è estremamente rotondo 40% Alc vol",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "TEQUILA FORTALEZA 100% DE AGAVE",
+                "name2": "Tequila bianca metodo artigianale 40% Alc vol",
+                "price": "€ 12,5 bicchiere da 0,5 cl € 6,5 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "TEQUILA HUSSONG REPOSADO",
+                "name2": "Invecchiata in botti di rovere ,note di agave , caramello e spezie, con un finale speziato.40% Alc vol",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "CONVITE ESENCIAL MEZCAL ESPADIN",
+                "name2": "Morbido e leggero. Sapore erbaceo con un tono agrumato e un tocco minerale. 40% Alc vol",
+                "price": "€ 8,50 bicchiere da 0,5 cl € 4,50 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "THE LOST EXPLORER MEZCAL ESPADIN",
+                "name2": "Mezcal dolce ed erbaceo, sentori di mela dolce, frutta matura e un lieve strato affumicato sul finale 40% Alc vol",
+                "price": "€ 10 bicchiere da 0,5 cl € 5,00 bicchiere da 0,25 cl"
+            },
+            {
+                "name1": "REY CAMPERO MEZCAL",
+                "name2": "Mezcal de Cuishe è 100% biologico, realizzato con agave selvatica e distillato in alambicco di rame.48 % Alc vol",
+                "price": "€ 13,5 bicchiere da 0,5 cl € 7,00 bicchiere da 0,25 cl"
+            }
+        ],
+        "GRAPPE ARTIGIANALI": [
+            {
+                "name1": "GRAPPA MOSCATO Distilleria Gualco",
+                "name2": "Profumo floreale e fruttato stoccata in serbatoi di acciaio inox per un minimo di sei mesi. 42% vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "GRAPPA ALLE ERBE Distilleria Gualco",
+                "name2": "Sapore secco, lievemente amaro, pronunciato il sentore di erbe e limone dato dall'erba luisa. 50% vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "GRAPPA STRAVECCHIA Distilleria Gualco",
+                "name2": "Note fruttate e speziate, sapore morbido con note di frutta secca,Tre anni in tonneau di rovere. 42% vol",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "GRAPPA RUBINIA Distilleria Gualco",
+                "name2": "invecchiata 6 anni in botti d'acacia 42% vol",
+                "price": "€ 7,00"
+            },
+            {
+                "name1": "GRAPPA ROSINA Distilleria Gualco",
+                "name2": "Invecchiata 10 anni in barriques d'acacia note complesse di spezie e fiori 56% vol",
+                "price": "€ 8,00"
+            },
+            {
+                "name1": "GRAPPA AL MIELE Distilleria Gualco",
+                "name2": "liquore a base di grappa con miele in infusione 42% vol",
+                "price": "€ 5,50"
+            },
+            {
+                "name1": "GRAPPA AL LAMPONE Distilleria Gualco",
+                "name2": "liquore a base di grappa con lamponi in infusione 42% vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "GRAPPA ALLA CAMOMILLA Distilleria Gualco",
+                "name2": "liquore a base di grappa con camomilla in infusione 42% vol",
+                "price": "€ 5,50"
+            },
+            {
+                "name1": "GRAPPA SUAVITAS Distilleria Gualco",
+                "name2": "liquore a base di grappa con infusione di latte 42% vol",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "GRAPPA alla LIQUIRIZIA Distilleria Gualco",
+                "name2": "liquore a base grappa con infusione di liquirizia 42% vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "GRAPPA MOSCATO Distilleria MAZZETTI DALTAVILLA",
+                "name2": "Grappa di moscato invecchiata in piccole botti castagno 42% vol",
+                "price": "€ 5,00"
+            },
+            {
+                "name1": "GRAPPA STRAVECCHIA 5 ANNI Distilleria MAZZETTI DALTAVILLA",
+                "name2": "Invecchiata in botti di rovere 42% vol",
+                "price": "€ 6,00"
+            }
+        ],
+        "CAFFETTERIA": [
+            {
+                "name1": "Caffè",
+                "name2": "miscela speciale selezionata",
+                "price": "€ 1,50"
+            },
+            {
+                "name1": "THE VERDE",
+                "name2": "THE VERDE",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "THE AI FRUTTI ROSSI",
+                "name2": "THE AI FRUTTI ROSSI",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana in tazza HERBAL INFUSION",
+                "name2": "TISANA ALLE ERBE",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza AFTER DINNER MINTS",
+                "name2": "TISANA MENTA E FINIOCCHIO",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza SNORE AND PEACE",
+                "name2": "TISANA CAMOMILLA LIMONE E LAVANDA",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza SUPREME",
+                "name2": "TISANA LIMONE E ZENZERO",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza DEPURATIVA",
+                "name2": "TISANA IBISCO, LIQUIRIZIA E ORTICA",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza DELL'AMMORE",
+                "name2": "TISANA CANNELLA, ZENZERO E CHIODI DI GAROFANO",
+                "price": "€ 4,50"
+            },
+            {
+                "name1": "Tisana bio in tazza INVERNALE",
+                "name2": "TISANA MELA E CANNELLA",
+                "price": "€ 4,50"
+            }
+        ]
+    }
+}

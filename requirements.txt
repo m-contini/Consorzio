@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+lxml
+pandas
+duckdb
+tabulate
+InquirerPy
+prompt_toolkit
+python-dotenv
+xlsxwriter

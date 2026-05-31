@@ -1,0 +1,10 @@
+__pycache__
+
+*.json
+!menu_updated.json
+
+*.xlsx
+
+*.duckdb
+
+.env
