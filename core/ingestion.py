@@ -39,7 +39,7 @@ def data_ingestion(
     _database.create_menu()
 
     # CLEANING
-    _cleaner.clean()
+    _cleaner.clean_pipeline()
     _cleaner.to_xlsx()
     print(
         f"\n{green('[XLSX]')} Output written to '{yellow(_cleaner.input_file.with_suffix('.xlsx'))}'"

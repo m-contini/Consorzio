@@ -44,30 +44,27 @@ class Cleaner:
         except FileNotFoundError:
             return {}
 
-    def clean(self) -> None:
+    def clean_pipeline(self) -> None:
         """
         Applica una serie di operazioni di pulizia e trasformazione al DataFrame del menu.
         """
 
         # 1. Costruzione DataFrame da menù JSON
-        self.df = self._build_df()
+        self._build_df()
 
-        # 2. Multi-index su 3 livelli
-        self.df.set_index(["Macro-categoria", "Categoria", "Articolo"], inplace=True)
-
-        # 3. Estrazione prezzi mancanti dai dettagli
+        # 2. Estrazione prezzi mancanti dai dettagli
         self._fill_empty_prices()
 
-        # 4. Parsing degli importi
+        # 3. Parsing degli importi
         self._parse_prices()
 
-        # 5. Riempimento `Size` vuoti
+        # 4. Riempimento `Size` vuoti
         self._fill_empty_size()
 
-        # 6. Rimozione duplicati
+        # 5. Rimozione duplicati
         self.df.drop_duplicates(inplace=True)
 
-    def _build_df(self) -> pd.DataFrame:
+    def _build_df(self) -> None:
         """Costruisce il DataFrame a partire dal dizionario `self.menu`"""
         records: list[dict[str, str]] = []
         for macro, categorie in self.menu.items():
@@ -83,7 +80,10 @@ class Cleaner:
                         }
                     )
 
-        return pd.DataFrame(records)
+        self.df = pd.DataFrame(records)
+
+        # Multi-index su 3 livelli
+        self.df.set_index(["Macro-categoria", "Categoria", "Articolo"], inplace=True)
 
     def _parse_prices(self) -> None:
 
@@ -97,7 +97,7 @@ class Cleaner:
             Rule(r"(€\s[\d\,]+)\sbicchiere\sda\s([\d\,cl\s]+)"),
         ]
 
-        processed_chunk: list[pd.DataFrame] = []
+        processed_chunks: list[pd.DataFrame] = []
 
         df = self.df
         for rule in rules:
@@ -134,7 +134,7 @@ class Cleaner:
             )
 
             # Blocco ripulito con prezzo isolato
-            processed_chunk.append(clean_slice)
+            processed_chunks.append(clean_slice)
 
             # Rimozione dal DataFrame corrente delle righe appena fatte, così non subiscono le altre regex
             df = df[~mask]
@@ -148,10 +148,10 @@ class Cleaner:
             )
             # Non distinguendo fra "piccola", "media", "bottiglia", ..., si setta "N/A"
             single_prices["Size"] = "N/A"
-            processed_chunk.append(single_prices)
+            processed_chunks.append(single_prices)
 
         # DataFrame ricomposto unendo tutti i pezzi
-        self.df = pd.concat(processed_chunk).sort_index()
+        self.df = pd.concat(processed_chunks).sort_index()
 
         # Ordine delle colonne
         remaining_cols = self.df.columns.drop(["Size", "Prezzo"])
