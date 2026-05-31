@@ -8,3 +8,4 @@ InquirerPy
 prompt_toolkit
 python-dotenv
 xlsxwriter
+colorama
