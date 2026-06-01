@@ -4,7 +4,6 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
 
 - [🍺 Consorzio Birre](#-consorzio-birre)
   - [Panoramica](#panoramica)
-    - [WIP](#wip)
   - [Architettura](#architettura)
   - [Storico](#storico)
   - [Infrastruttura](#infrastruttura)
@@ -17,9 +16,7 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
 Lo scraper viene eseguito due volte al giorno su `Google Cloud`: recupera il menu corrente, lo confronta con l'ultima versione (se presente) e in caso di differenze invia un'email di notifica. Nessun intervento manuale richiesto.
 In ambiente locale, lo script disabilita la modalità *headless* per offrire una TUI (**Terminal User Interface**) interattiva per navigare il menu, effettuare ricerche e consultare aggregazioni, il tutto da tastiera.  
 
-### WIP
-
->La pipeline include un sistema di gestione errori integrato: in caso di anomalie (es. blocco dell'IP, cambiamenti nel layout del sito web), lo script solleva eccezioni gestite che garantiscono l'integrità dei dati e l'invio di alert di sistema, evitando falsi positivi nel database.
+La pipeline include un sistema di gestione errori integrato: in caso di anomalie (es. blocco dell'IP, cambiamenti nel layout del sito web), lo script solleva eccezioni gestite che garantiscono l'integrità dei dati e l'invio di alert di sistema, evitando falsi positivi nel database.
 
 ---
 
