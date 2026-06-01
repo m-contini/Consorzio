@@ -90,6 +90,10 @@ class Scraper:
                     self.menu[macro_categoria][categoria].append(
                         {"name1": nome, "name2": dettagli, "price": prezzo}
                     )
+
+        if not self.menu:
+            raise ValueError("Menu is empty after parsing. Check the website structure.")
+
         return self.menu
 
     def save_json(self, menu_json: MenuCompleto) -> None:

@@ -6,6 +6,7 @@ invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 
 import os
 from datetime import datetime
+import sys
 from zoneinfo import ZoneInfo
 
 import core.alert as alert
@@ -55,7 +56,9 @@ def main() -> None:
             _tui = tui.InteractiveMenu(cln.df)
             _tui.run()
     except Exception as e:
+        print(f"🚨 FATAL ERROR riscontrato nella pipeline: {e}", file=sys.stderr)
         _alert.send_email(_alert.build_fatal_alert(e))
+        sys.exit(1)
 
 
 if __name__ == "__main__":
