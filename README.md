@@ -4,6 +4,7 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
 
 - [🍺 Consorzio Birre](#-consorzio-birre)
   - [Panoramica](#panoramica)
+    - [WIP](#wip)
   - [Architettura](#architettura)
   - [Storico](#storico)
   - [Infrastruttura](#infrastruttura)
@@ -15,7 +16,10 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
 
 Lo scraper viene eseguito due volte al giorno su `Google Cloud`: recupera il menu corrente, lo confronta con l'ultima versione (se presente) e in caso di differenze invia un'email di notifica. Nessun intervento manuale richiesto.
 In ambiente locale, lo script disabilita la modalità *headless* per offrire una TUI (**Terminal User Interface**) interattiva per navigare il menu, effettuare ricerche e consultare aggregazioni, il tutto da tastiera.  
-La pipeline include un sistema di gestione errori integrato: in caso di anomalie (es. blocco dell'IP, cambiamenti nel layout del sito web), lo script solleva eccezioni gestite che garantiscono l'integrità dei dati e l'invio di alert di sistema, evitando falsi positivi nel database.
+
+### WIP
+
+>La pipeline include un sistema di gestione errori integrato: in caso di anomalie (es. blocco dell'IP, cambiamenti nel layout del sito web), lo script solleva eccezioni gestite che garantiscono l'integrità dei dati e l'invio di alert di sistema, evitando falsi positivi nel database.
 
 ---
 
@@ -23,7 +27,7 @@ La pipeline include un sistema di gestione errori integrato: in caso di anomalie
 
 ```mermaid
 flowchart TD
-    GCS[(Google Cloud Storage\nDuckDB)]
+    GCS[(Storage Volume\nDuckDB / JSON / XLSX)]
 
     subgraph GCP ["☁️ Google Cloud"]
         SCH[Cloud Scheduler]
@@ -59,10 +63,10 @@ flowchart TD
 ```
 
 1. **Scraping** — Recupera e analizza il menu con `requests` e `BeautifulSoup`
-2. **Pulizia** — Normalizza i dati grezzi con `pandas` `re` (stdlib).
-3. **Persistenza** — `duckdb` salva il risultato con storico completo delle modifiche (**SCD Type 2**)
-4. **Alert** — notifica SMTP, inviata solo in presenza di variazioni
-5. **TUI** — in esecuzione locale, interfaccia interattiva a terminale per navigare e interrogare i dati
+2. **Pulizia** — Normalizza i dati grezzi con `pandas` e `re` (stdlib).
+3. **Persistenza** — `duckdb` salva il risultato con storico completo delle modifiche (**SCD Type 2**). Per ogni esecuzione si generano degli snapshot testuali (`.json` + `.xlsx`).
+4. **Alert** — Notifica SMTP inviata in presenza di variazioni, completa di allegati `.csv` generati al volo in memoria con i dettagli dei cambiamenti.
+5. **TUI** — In esecuzione locale, interfaccia interattiva a terminale per navigare e interrogare i dati
 
 ---
 
@@ -78,7 +82,7 @@ Grazie alla logica SCD Type 2 (**SlowlyChangingData Type 2**), il database garan
 | --- | --- |
 | Runtime | Google Cloud Run Job |
 | Scheduling | Google Cloud Scheduler (2/gg) |
-| Storage | Google Cloud Storage (bucket) |
+| Storage | Volume montato su Cloud Run / Ambiente Locale |
 | CI/CD | Google Cloud Build |
 | Container | Docker |
 
