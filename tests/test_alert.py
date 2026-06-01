@@ -1,7 +1,7 @@
-import pytest
 from unittest.mock import MagicMock, patch
 
 import pandas as pd
+import pytest
 
 from core.alert import Notification
 
@@ -42,7 +42,7 @@ def test_missing_credentials(
     """Verifica che sia sollevato ValueError se mancano credenziali in .env"""
 
     with pytest.raises(ValueError, match="Missing credentials."):
-        Notification(*sample_dfs, timestamp="2026-06-01T06-32-19")
+        _ = Notification(timestamp="2026-06-01T06-32-19")
 
 
 # Costruzione del messaggio e allegati
@@ -55,9 +55,9 @@ def test_build_msg(
 ) -> None:
 
     # Inizializza oggetto
-    alert = Notification(*sample_dfs, timestamp="2026-06-01T06-38-16")
+    alert = Notification(timestamp="2026-06-01T06-38-16")
 
-    msg = alert._build_msg()  # pyright: ignore[reportPrivateUsage]
+    msg = alert.build_msg(deactivated_rows=sample_dfs[0], inserted_rows=sample_dfs[1])
 
     # Verifica headers
     assert msg["Subject"] == f"{alert.timestamp} | Aggiornamento Menu Consorzio"
@@ -72,6 +72,37 @@ def test_build_msg(
     content = attachments[0].get_payload(decode=True)
     assert isinstance(content, bytes)
     assert b"BIANCONIGLIO" in content
+
+
+# Costruzione del messaggio e allegati
+@patch("core.alert.load_dotenv")
+@patch("core.alert.os.getenv", return_value="dummy")
+def test_build_fatal_alert(
+    mock_getenv: MagicMock,
+    mock_dotenv: MagicMock,
+    sample_dfs: tuple[pd.DataFrame, pd.DataFrame],
+) -> None:
+
+    # Inizializza oggetto
+    alert = Notification(timestamp="2026-06-01T06-38-16")
+
+    with patch(
+        "core.alert.traceback.format_exc", return_value="errore"
+    ) as mock_traceback:
+        msg = alert.build_fatal_alert(mock_traceback)
+
+    # Verifica headers
+    assert msg["Subject"] == f"{alert.timestamp} | Errore Menu Consorzio"
+    assert msg["From"] == "dummy"
+    assert msg["To"] == "dummy"
+
+    # Verifica gestione allegati (dev'essere uno solo, non vuoto)
+    attachments = next(msg.iter_attachments(), None)
+    assert attachments is None
+
+    msg_body = msg.get_body(preferencelist=("plain",))
+    assert msg_body is not None
+    assert "errore" in msg_body.get_content()
 
 
 # Invio email
@@ -90,14 +121,16 @@ def test_send_email_success(
     senza inviare email reale
     """
 
-    alert = Notification(*sample_dfs, timestamp="2026-06-01T06-48-11")
+    alert = Notification(timestamp="2026-06-01T06-48-11")
 
     # Server finto
     mock_server = MagicMock()
     mock_smtp_class.return_value = mock_server
 
     # Invio
-    alert.send_email()
+    alert.send_email(
+        alert.build_msg(deactivated_rows=sample_dfs[0], inserted_rows=sample_dfs[1])
+    )
 
     # Verifica che SMTP sia stato inizializzato con i parametri giusti
     mock_smtp_class.assert_called_once_with("smtp.gmail.com", 587)

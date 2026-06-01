@@ -1,8 +1,10 @@
-import smtplib
-from email.message import EmailMessage
 import os
-from dotenv import load_dotenv
+import smtplib
+import traceback
+from email.message import EmailMessage
+
 import pandas as pd
+from dotenv import load_dotenv
 
 from .colors import *
 
@@ -13,9 +15,7 @@ class Notification:
     I dati vengono inviati come allegati CSV generati in memoria.
     """
 
-    def __init__(
-        self, *new_rows: pd.DataFrame, timestamp: str, reciprocal: bool = True
-    ) -> None:
+    def __init__(self, timestamp: str, reciprocal: bool = True) -> None:
 
         # Il parametro `reciprocal`, se True, imposta
         # il mittente come destinatario.
@@ -25,7 +25,6 @@ class Notification:
             )
             raise ValueError("Missing credentials.")
 
-        self.deactivated_rows, self.inserted_rows = new_rows
         self.timestamp: str = timestamp
 
     def _set_credentials(self, reciprocal: bool) -> bool:
@@ -38,7 +37,9 @@ class Notification:
             return False
         return True
 
-    def _build_msg(self) -> EmailMessage:
+    def build_msg(
+        self, deactivated_rows: pd.DataFrame, inserted_rows: pd.DataFrame
+    ) -> EmailMessage:
         """Costruisce il messaggio email con gli allegati."""
         msg = EmailMessage()
         msg["From"] = self._sender
@@ -50,14 +51,14 @@ class Notification:
         # GESTIONE ALLEGATI IN MEMORIA (Nessun file sul disco)
         # ---------------------------------------------------------
         changed_rows = {
-            f"{self.timestamp}_deactivated_rows.csv": self.deactivated_rows,
-            f"{self.timestamp}_inserted_rows.csv": self.inserted_rows,
+            f"{self.timestamp}_deactivated_rows.csv": deactivated_rows,
+            f"{self.timestamp}_inserted_rows.csv": inserted_rows,
         }
         for fname, df in changed_rows.items():
             if df.empty:
                 continue
-            # Il DataFrame
-            # viene convertito in stringa CSV e poi codificato in byte per l'invio
+            # Il DataFrame # viene convertito in stringa CSV
+            # e poi codificato in byte per l'invio
             df_as_str = df.to_csv(index=False, sep=";")
             msg.add_attachment(
                 df_as_str.encode("utf-8"),
@@ -68,11 +69,29 @@ class Notification:
 
         return msg
 
-    def send_email(
-        self, smtp_server: str = "smtp.gmail.com", smtp_port: int = 587
-    ) -> None:
+    def build_fatal_alert(self, error: Exception) -> EmailMessage:
+        """Costruisce il messaggio email con gli allegati."""
+        msg = EmailMessage()
+        msg["From"] = self._sender
+        msg["To"] = self._recipient
+        msg["Subject"] = f"{self.timestamp} | Errore Menu Consorzio"
 
-        msg = self._build_msg()
+        stack_trace = traceback.format_exc()
+        msg.set_content(
+            "Ciao,\n\n"
+            "Sfortunatamente si è verificato un errore "
+            "durante l'esecuzione dello script:\n\n"
+            f"{stack_trace}"
+        )
+
+        return msg
+
+    def send_email(
+        self,
+        msg: EmailMessage,
+        smtp_server: str = "smtp.gmail.com",
+        smtp_port: int = 587,
+    ) -> None:
 
         # ---------------------------------------------------------
         # INVIO EMAIL
@@ -88,3 +107,4 @@ class Notification:
             )
         except Exception as e:
             print(f"{red('[EMAIL]')} ❌ Error during email sending: {e}")
+            raise e
