@@ -7,6 +7,7 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
   - [Architettura](#architettura)
   - [Storico](#storico)
   - [Infrastruttura](#infrastruttura)
+  - [Qualità del codice (CI)](#qualità-del-codice-ci)
   - [Interfaccia locale (TUI)](#interfaccia-locale-tui)
   - [Struttura del progetto](#struttura-del-progetto)
   - [Setup locale](#setup-locale)
@@ -14,9 +15,8 @@ Pipeline automatizzata che monitora le variazioni del menu del **Consorzio Birre
 ## Panoramica
 
 Lo scraper viene eseguito due volte al giorno su `Google Cloud`: recupera il menu corrente, lo confronta con l'ultima versione (se presente) e in caso di differenze invia un'email di notifica. Nessun intervento manuale richiesto.
+In caso di anomalie temporanee del sito (es. blocchi o pagine vuote), lo script interrompe l'esecuzione, invia un alert email dedicato e proverà a rieseguire una volta il job subito dopo.
 In ambiente locale, lo script disabilita la modalità *headless* per offrire una TUI (**Terminal User Interface**) interattiva per navigare il menu, effettuare ricerche e consultare aggregazioni, il tutto da tastiera.  
-
-La pipeline include un sistema di gestione errori integrato: in caso di anomalie (es. blocco dell'IP, cambiamenti nel layout del sito web), lo script solleva eccezioni gestite che garantiscono l'integrità dei dati e l'invio di alert di sistema, evitando falsi positivi nel database.
 
 ---
 
@@ -25,6 +25,10 @@ La pipeline include un sistema di gestione errori integrato: in caso di anomalie
 ```mermaid
 flowchart TD
     GCS[(Storage Volume\nDuckDB / JSON / XLSX)]
+
+    subgraph GH ["🐙 GitHub"]
+        GHA[GitHub Actions\nTest automatici]
+    end
 
     subgraph GCP ["☁️ Google Cloud"]
         SCH[Cloud Scheduler]
@@ -47,6 +51,7 @@ flowchart TD
     MAIL([📧 Email alert])
     USER([👤 Utente])
 
+    GHA -->|test superati| CB
     SCH -->|trigger| CR
     CB -->|deploy| CR
     CR --> pipeline
@@ -85,6 +90,14 @@ Grazie alla logica SCD Type 2 (**SlowlyChangingData Type 2**), il database garan
 
 ---
 
+## Qualità del codice (CI)
+
+Il repository include una suite di test unitari e d'integrazione (descritta in [tests/README.md](./tests/README.md)) che simulano offline il comportamento senza usare la rete o il database reale.
+
+Tramite **GitHub Actions**, a ogni aggiornamento del codice i test vengono eseguiti automaticamente in un ambiente isolato. Se i test non sono tutti verdi, il deploy sul cloud viene bloccato per prevenire il caricamento di dati errati.
+
+---
+
 ## Interfaccia locale (TUI)
 
 In locale, lo script rileva l'assenza della variabile d'ambiente `HEADLESS` e avvia una TUI navigabile da tastiera che consente di:
@@ -100,16 +113,20 @@ Su `Cloud Run` la stessa variabile d'ambiente, impostata direttamente nella conf
 ## Struttura del progetto
 
 ```plain
-.
-├── main.py
-└── core/
-    ├── scraper.py      # Download e parsing HTML
-    ├── cleaner.py      # Normalizzazione dati
-    ├── database.py     # Persistenza dati e logica SCD Type 2
-    ├── alert.py        # Notifiche SMTP (Gmail)
-    ├── tui.py          # Terminale interattivo (solo fuori dal cloud!)
-    ├── const.py        # Costanti
-    └── colors.py       # Colori per tui.py
+
+├── .github/workflows/
+│   └── ci.yml          # Configurazione GitHub Actions
+├── main.py             # Punto di ingresso e gestione errori
+├── core/
+│   ├── scraper.py      # Download e parsing HTML
+│   ├── cleaner.py      # Normalizzazione dati
+│   ├── database.py     # Logica database e storicizzazione
+│   ├── alert.py        # Invio notifiche e avvisi di errore
+│   ├── tui.py          # Terminale interattivo per l'utente
+│   ├── const.py        # Costanti e percorsi
+│   └── colors.py       # Gestione dell'output testuale
+└── tests/
+    └── README.md       # Dettagli ed esecuzione della suite di test
 ```
 
 ## Setup locale
