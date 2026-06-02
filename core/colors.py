@@ -2,14 +2,10 @@
 Utility per la formattazione del testo nel terminale tramite codici colore ANSI.
 """
 
-import os
 from pathlib import Path
 
 from colorama import Fore
-
-# Verifica se siamo in ambiente cloud
-IS_CLOUD = os.getenv("HEADLESS") == "true"
-
+from .const import IS_CLOUD
 
 def red(text: str | Path) -> str:
     if IS_CLOUD:
