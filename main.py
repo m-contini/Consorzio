@@ -4,22 +4,21 @@ Gestisce il flusso di scraping, pulizia, aggiornamento del database,
 invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 """
 
-import os
-from datetime import datetime
 import sys
+from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import core.alert as alert
+import core.cloud as cloud
 import core.ingestion as ingestion
 import core.tui as tui
 from core.colors import *
-from core.const import DB_PATH, MENU_JSON
+from core.const import DB_PATH, IS_CLOUD, MENU_JSON
 
 now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
 
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
 history_dir = MENU_JSON.parent / "history"
-menu_json = history_dir / (now + "_" + MENU_JSON.name)
 db_path = DB_PATH
 
 
@@ -27,6 +26,17 @@ def main() -> None:
     """
     Funzione principale che orchestra le fasi di data ingestion e l'interfaccia utente.
     """
+
+    # Se siamo in locale, scarichiamo il DB aggiornato
+    # prima di qualsiasi operazione.
+    # Se siamo in cloud, ritorna None
+    cloud.download_cloud_db(DB_PATH)
+
+    # Percorso del JSON
+    if IS_CLOUD:
+        menu_json = history_dir / (now + "_" + MENU_JSON.name)
+    else:
+        menu_json = MENU_JSON
 
     # Istanzia alert per poter mandare notifica se necessario
     _alert = alert.Notification(timestamp=now, reciprocal=True)
@@ -50,8 +60,12 @@ def main() -> None:
             msg = _alert.build_msg(db.deactivated_rows, db.inserted_rows)
             _alert.send_email(msg)
 
-        # TEXTUAL USER INTERFACE (Solo se non in modalità headless)
-        if os.getenv("HEADLESS") != "true":
+        # Se siamo in locale, carichiamo le modifiche sul bucket
+        # Se siamo in cloud, ritorna None senza fare nulla
+        cloud.upload_cloud_db(DB_PATH)
+
+        # TEXTUAL USER INTERFACE (solo in locale)
+        if not IS_CLOUD:
             print(cyan("\nLookup:"))
             _tui = tui.InteractiveMenu(cln.df)
             _tui.run()
