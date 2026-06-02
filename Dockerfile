@@ -9,5 +9,8 @@ COPY . .
 
 ENV HEADLESS=true
 ENV DATA_PATH=/data
+# Forza Python a stampare immediatamente ogni riga (unbuffered)
+# evitando che i messaggi di log vengano accumulati
+ENV PYTHONUNBUFFERED=1
 
 CMD ["python", "main.py"]
