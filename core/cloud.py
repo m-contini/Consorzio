@@ -22,7 +22,7 @@ def download_cloud_db(local_path: Path) -> None:
         return
 
     print(
-        "📥 {magenta('[CLOUD]')} "
+        f"📥 {magenta('[CLOUD]')} "
         f"Download di '{REMOTE_DB_BLOB}' "
         f"dal bucket '{BUCKET_NAME}'"
     )
