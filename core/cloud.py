@@ -30,7 +30,7 @@ def download_cloud_db(local_path: Path) -> None:
         blob = _bucket.blob(REMOTE_DB_BLOB)
         if blob.exists():
             local_path.parent.mkdir(parents=True, exist_ok=True)
-            blob.download_to_filename(str(local_path))
+            blob.download_to_filename(str(local_path), timeout=30)
             print(
                 f"✅ {magenta('[CLOUD]')} Database locale sincronizzato con il Cloud."
             )
