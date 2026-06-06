@@ -16,8 +16,16 @@ def sample_dfs() -> tuple[pd.DataFrame, pd.DataFrame]:
     Serve per testare la logica di skip (se vuoto) in `_build_msg`
     """
     df_deactivated_rows = pd.DataFrame(
-        {"Articolo": ["BIANCONIGLIO"], "Size": ["piccola"], "Prezzo": [5.5]}
+        {
+            "Macro-categoria": ["Birre"],
+            "Categoria": ["Birre alla spina"],
+            "Articolo": ["BIANCONIGLIO"],
+            "Dettagli": ["White IPA 5,5%"],
+            "Size": ["piccola"],
+            "Prezzo": [5.5],
+        }
     )
+
     df_inserted_rows = pd.DataFrame()
 
     return df_deactivated_rows, df_inserted_rows

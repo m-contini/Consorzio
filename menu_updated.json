@@ -805,6 +805,23 @@
         ]
     },
     "MANGIA BENE": {
+        "SPECIALE TOSCANA: FINOCCHIONA DI CINTA SENESE": [
+            {
+                "name1": "SPECIALE MERENDA TOSCANA",
+                "name2": "TAGLIERE CON: FINOCCHIONA E PECORINO + PANE (allergeni:1,7)",
+                "price": "€ 18,50"
+            },
+            {
+                "name1": "SPECIALE 2: SENESE",
+                "name2": "PANINO CON: FINOCCHIONA, FORMAGGIO SEMISTAGIONATO, MELANZANE (allergeni:1, 7,12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "SPECIALE 3: POGGIBONSI",
+                "name2": "PANINO CON: FINOCCHIONA, FORMAGGIO FRESCO, ZUCCHINE GRIGLIATE(allergeni:1,7,12)",
+                "price": "€ 13,50"
+            }
+        ],
         "FUORI MENU': CHORIZO DI PATANEGRA": [
             {
                 "name1": "FUORI MENU' 1: SABROSO",
@@ -922,11 +939,6 @@
             }
         ],
         "CROSTONI": [
-            {
-                "name1": "♥CROSTONE SPECIAL BIGUSTO 1: BRESAOLA RUBIA GALLEGA / CHORIZO IBERICO",
-                "name2": "RUBIA GALLEGA / Chorizo iberico (allergeni:1)",
-                "price": "€ 15.00"
-            },
             {
                 "name1": "♥CROSTONE SPECIAL BIGUSTO 2: FINOCCHIONA DI CINTA / CHORIZO IBERICO",
                 "name2": "FINOCCHIONA DI CINTA / Chorizo iberico (allergeni:1)",

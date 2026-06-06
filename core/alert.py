@@ -47,9 +47,45 @@ class Notification:
         msg["Subject"] = f"{self.timestamp} | Aggiornamento Menu Consorzio"
         msg.set_content("Ciao,\n\nIn allegato le variazioni del menu.\n\nSaluti.\n")
 
-        # ---------------------------------------------------------
+        # -----------------------------------
+        # Tabelle HTML nel body del messaggio
+        # -----------------------------------
+        cols = [
+            "Macro-categoria",
+            "Categoria",
+            "Articolo",
+            "Dettagli",
+            "Size",
+            "Prezzo",
+        ]
+
+        deactivated_html = (
+            "<i> Nessuna riga disattivata.</i><br>"
+            if deactivated_rows.empty
+            else '<p><strong><span style="color: #d32f2f;">🔴 Righe disattivate:</span></strong></p>'
+            + deactivated_rows[cols].fillna("N/A").to_html(index=False)
+        )
+        inserted_html = (
+            "<i> Nessuna riga inserita.</i><br>"
+            if inserted_rows.empty
+            else '<p><strong><span style="color: #388e3c;">🟢 Righe inserite:</span></strong></p>'
+            + inserted_rows[cols].fillna("N/A").to_html(index=False)
+        )
+
+        html_body = (
+            "<p>Ciao,</p>"
+            "<p>In allegato le variazioni al menù.</p>"
+            "<p>Di seguito il riepilogo delle modifiche:</p>"
+            f"{deactivated_html}"
+            f"{inserted_html}"
+            "<p>Saluti,</p>"
+            "<p><strong>m-contini</strong></p>"
+        )
+        msg.add_alternative(html_body, subtype="html")
+
+        # -------------------------------------------------------
         # GESTIONE ALLEGATI IN MEMORIA (Nessun file sul disco)
-        # ---------------------------------------------------------
+        # -------------------------------------------------------
         changed_rows = {
             f"{self.timestamp}_deactivated_rows.csv": deactivated_rows,
             f"{self.timestamp}_inserted_rows.csv": inserted_rows,
