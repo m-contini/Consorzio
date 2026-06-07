@@ -4,9 +4,12 @@ Gestisce il flusso di scraping, pulizia, aggiornamento del database,
 invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 """
 
+import os
 import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
+
+from dotenv import load_dotenv
 
 import core.alert as alert
 import core.cloud as cloud
@@ -20,6 +23,24 @@ now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
 history_dir = MENU_JSON.parent / "history"
 db_path = DB_PATH
+
+
+def test_env(required_vars: list[str] | tuple[str, ...] | None = None) -> bool:
+    # Serve solo in locale, su cloud fallisce in silenzio
+    load_dotenv()
+    if required_vars is None:
+        return True
+    return all(os.getenv(v) is not None for v in required_vars)
+
+
+# Esce immediatamente se non riesce a caricare tutte le variabili d'ambiente
+required_vars = ("API_KEY", "SENDER", "RECIPIENT", "HEADLESS")
+if not test_env(required_vars):
+    print(
+        f"🚨 {red('[FATAL]')}: Configurazione incompleta, variabili non trovate in '.env' "
+        f"({', '.join([v for v in required_vars if os.getenv(v) is None])})"
+    )
+    sys.exit(1)
 
 
 def main() -> None:
@@ -70,7 +91,7 @@ def main() -> None:
             _tui = tui.InteractiveMenu(cln.df)
             _tui.run()
     except Exception as e:
-        print(f"🚨 FATAL ERROR riscontrato nella pipeline: {e}", file=sys.stderr)
+        print(f"🚨 {red('[FATAL]')}: {e}", file=sys.stderr)
         _alert.send_email(_alert.build_fatal_alert(e))
         sys.exit(1)
 

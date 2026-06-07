@@ -33,9 +33,8 @@ class Notification:
         self._api_key = os.getenv("API_KEY", "")
         self._sender = os.getenv("SENDER", "")
         self._recipient = self._sender if reciprocal else os.getenv("RECIPIENT", "")
-        if not all([self._api_key, self._sender, self._recipient]):
-            return False
-        return True
+
+        return all([self._api_key, self._sender, self._recipient])
 
     def build_msg(
         self, deactivated_rows: pd.DataFrame, inserted_rows: pd.DataFrame
