@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from typing import Any, TypeAlias
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -18,6 +19,11 @@ class Scraper:
     in una gerarchia a tre livelli: Macro-categoria, Categoria e Prodotto.
     """
 
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+    }
+
     def __init__(self, output_file: Path):
         # File JSON su cui scrivere il menù
         self.output_file = output_file
@@ -25,7 +31,7 @@ class Scraper:
 
     def parse_menu(self, url: str) -> MenuCompleto:
 
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=Scraper.HEADERS, timeout=15)
 
         soup = BeautifulSoup(response.text, "lxml")
 
@@ -92,7 +98,9 @@ class Scraper:
                     )
 
         if not self.menu:
-            raise ValueError("Menu is empty after parsing. Check the website structure.")
+            raise ValueError(
+                "Menu is empty after parsing. Check the website structure."
+            )
 
         return self.menu
 
