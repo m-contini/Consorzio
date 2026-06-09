@@ -43,7 +43,15 @@ class Notification:
         msg = EmailMessage()
         msg["From"] = self._sender
         msg["To"] = self._recipient
-        msg["Subject"] = f"{self.timestamp} | Aggiornamento Menu Consorzio"
+
+        subject: list[str] = []
+        if len(deactivated_rows) > 0:
+            subject.append(f"-{len(deactivated_rows)} rimossi")
+        if len(inserted_rows) > 0:
+            subject.append(f"+{len(inserted_rows)} nuovi")
+        subject_str = " | ".join(subject) if subject else "Nessuna variazione"
+        msg["Subject"] = f"{self.timestamp} | Menu Consorzio ({subject_str})"
+
         msg.set_content("Ciao,\n\nIn allegato le variazioni del menu.\n\nSaluti.\n")
 
         # -----------------------------------
