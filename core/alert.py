@@ -2,11 +2,16 @@ import os
 import smtplib
 import traceback
 from email.message import EmailMessage
+from typing import Any
 
 import pandas as pd
 from dotenv import load_dotenv
 
 from .colors import *
+
+
+def _format_price(price: Any) -> str:
+    return f"{price:.2f} €" if isinstance(price, (int, float)) else price
 
 
 class Notification:
@@ -70,13 +75,17 @@ class Notification:
             "<i> Nessuna riga disattivata.</i><br>"
             if deactivated_rows.empty
             else '<p><strong><span style="color: #d32f2f;">🔴 Righe disattivate:</span></strong></p>'
-            + deactivated_rows[cols].fillna("N/A").to_html(index=False)
+            + deactivated_rows[cols]
+            .fillna("N/A")
+            .to_html(index=False, formatters={"Prezzo": _format_price})
         )
         inserted_html = (
             "<i> Nessuna riga inserita.</i><br>"
             if inserted_rows.empty
             else '<p><strong><span style="color: #388e3c;">🟢 Righe inserite:</span></strong></p>'
-            + inserted_rows[cols].fillna("N/A").to_html(index=False)
+            + inserted_rows[cols]
+            .fillna("N/A")
+            .to_html(index=False, formatters={"Prezzo": _format_price})
         )
 
         html_body = (
