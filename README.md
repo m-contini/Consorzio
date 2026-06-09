@@ -67,7 +67,7 @@ flowchart TD
 1. **Scraping** — Recupera e analizza il menu con `requests` e `BeautifulSoup`
 2. **Pulizia** — Normalizza i dati grezzi con `pandas` e `re` (stdlib).
 3. **Persistenza** — `duckdb` salva il risultato con storico completo delle modifiche (**SCD Type 2**). Per ogni esecuzione si generano degli snapshot testuali (`.json` + `.xlsx`).
-4. **Alert** — Notifica SMTP inviata in presenza di variazioni, completa di allegati `.csv` generati al volo in memoria con i dettagli dei cambiamenti.
+4. **Alert** — Notifica SMTP inviata in presenza di variazioni, completa di tabelle HTML nel corpo del messaggio e allegati `.csv` generati al volo in memoria.
 5. **TUI** — In esecuzione locale, interfaccia interattiva a terminale per navigare e interrogare i dati
 
 ---
