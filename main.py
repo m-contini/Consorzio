@@ -6,6 +6,7 @@ invio notifiche e avvio dell'interfaccia utente testuale (TUI).
 
 import os
 import sys
+import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -43,7 +44,7 @@ if not test_env(required_vars):
     sys.exit(1)
 
 
-def main() -> None:
+def run_pipeline() -> None:
     """
     Funzione principale che orchestra le fasi di data ingestion e l'interfaccia utente.
     """
@@ -94,6 +95,16 @@ def main() -> None:
         print(f"🚨 {red('[FATAL]')}: {e}", file=sys.stderr)
         _alert.send_email(_alert.build_fatal_alert(e))
         sys.exit(1)
+
+
+def main() -> None:
+    start_time = time.perf_counter()
+    print("✈️ [START] Avvio pipeline ETL")
+    run_pipeline()
+    end_time = time.perf_counter()
+    print(
+        f"🕰️ [END] Pipeline completata con successo in {end_time - start_time:.2f} secondi."
+    )
 
 
 if __name__ == "__main__":
