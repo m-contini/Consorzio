@@ -11,7 +11,10 @@ from .colors import *
 
 
 def _format_price(price: Any) -> str:
-    return f"{price:.2f} €" if isinstance(price, (int, float)) else price
+    try:
+        return f"{float(price):.2f} €"
+    except (ValueError, TypeError):
+        return str(price)
 
 
 class Notification:
@@ -56,7 +59,6 @@ class Notification:
             subject.append(f"+{len(inserted_rows)} nuovi")
         subject_str = " | ".join(subject) if subject else "Nessuna variazione"
         msg["Subject"] = f"{self.timestamp} | Menu Consorzio ({subject_str})"
-
         msg.set_content("Ciao,\n\nIn allegato le variazioni del menu.\n\nSaluti.\n")
 
         # -----------------------------------
