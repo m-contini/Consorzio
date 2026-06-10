@@ -1,8 +1,9 @@
-from pathlib import Path
 import json
 import re
 import warnings
+from pathlib import Path
 from typing import NamedTuple
+
 import pandas as pd
 from tabulate import tabulate
 
@@ -61,8 +62,19 @@ class Cleaner:
         # 4. Riempimento `Size` vuoti
         self._fill_empty_size()
 
-        # 5. Rimozione duplicati
+        # 5. Rimozione spazi bianchi
+        self.strip_all()
+
+        # 6. Rimozione duplicati
         self.df.drop_duplicates(inplace=True)
+
+    def strip_all(self) -> None:
+        for col in ("Articolo", "Dettagli", "Categoria"):
+            if col in self.df.columns:
+                # Rimozione spazi iniziali/finali
+                self.df[col] = self.df[col].astype(str).str.strip()
+                # Spazi consecutivi
+                self.df[col] = self.df[col].str.replace(r"\s+", " ", regex=True)
 
     def _build_df(self) -> None:
         """Costruisce il DataFrame a partire dal dizionario `self.menu`"""
