@@ -81,6 +81,10 @@ def run_pipeline() -> None:
             print(f"{yellow('[EMAIL]')} 📩 Sending notification via e-mail...")
             msg = _alert.build_msg(db.deactivated_rows, db.inserted_rows)
             _alert.send_email(msg)
+        else:
+            print(
+                f"{yellow('[EMAIL]')} ✨  Sospensione: nessuna variazione rilevata nel menu."
+            )
 
         # Se siamo in locale, carichiamo le modifiche sul bucket
         # Se siamo in cloud, ritorna None senza fare nulla
