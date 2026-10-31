@@ -13,11 +13,10 @@ from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 
 import core.alert as alert
-import core.cloud as cloud
 import core.ingestion as ingestion
 import core.tui as tui
 from core.colors import *
-from core.const import DB_PATH, IS_CLOUD, MENU_JSON
+from core.const import DB_PATH, MENU_JSON, HEADLESS
 
 now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
 
@@ -25,10 +24,10 @@ now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
 history_dir = MENU_JSON.parent / "history"
 db_path = DB_PATH
 
-
 def test_env(required_vars: list[str] | tuple[str, ...] | None = None) -> bool:
     # Serve solo in locale, su cloud fallisce in silenzio
     load_dotenv()
+
     if required_vars is None:
         return True
     return all(os.getenv(v) is not None for v in required_vars)
@@ -49,13 +48,8 @@ def run_pipeline() -> None:
     Funzione principale che orchestra le fasi di data ingestion e l'interfaccia utente.
     """
 
-    # Se siamo in locale, scarichiamo il DB aggiornato
-    # prima di qualsiasi operazione.
-    # Se siamo in cloud, ritorna None
-    cloud.download_cloud_db(DB_PATH)
-
     # Percorso del JSON
-    if IS_CLOUD:
+    if HEADLESS:
         menu_json = history_dir / (now + "_" + MENU_JSON.name)
     else:
         menu_json = MENU_JSON
@@ -86,12 +80,8 @@ def run_pipeline() -> None:
                 f"{yellow('[EMAIL]')} ✨  Sospensione: nessuna variazione rilevata nel menu."
             )
 
-        # Se siamo in locale, carichiamo le modifiche sul bucket
-        # Se siamo in cloud, ritorna None senza fare nulla
-        cloud.upload_cloud_db(DB_PATH)
-
         # TEXTUAL USER INTERFACE (solo in locale)
-        if not IS_CLOUD:
+        if not HEADLESS:
             print(cyan("\nLookup:"))
             _tui = tui.InteractiveMenu(cln.df)
             _tui.run()
