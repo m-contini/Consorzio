@@ -7,8 +7,6 @@ DUCKDB_FNAME = "menu.duckdb"
 # Verifica se siamo in modalità headless
 HEADLESS = "--headless" in sys.argv
 os.environ["HEADLESS"] = str(HEADLESS).lower()
-print(f"{HEADLESS=}")
-print(f"{os.getenv("HEADLESS")=}")
 
 # URL del menu online
 URL = "https://consorziobirre.com/menu-consorzio-pub/"
