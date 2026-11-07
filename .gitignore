@@ -8,3 +8,5 @@ __pycache__
 *.duckdb
 
 .env
+
+*.log

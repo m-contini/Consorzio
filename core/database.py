@@ -16,6 +16,10 @@ def hashed_df(df: pd.DataFrame) -> pd.DataFrame:
     df["item_id"] = pd.util.hash_pandas_object(df[cols_to_hash], index=False)
 
     remaining_cols = df.columns.drop(["item_id", "Prezzo"])
+
+    # Previene pasticci con le parti decimali (es. 3+10E-6 <> 3,00)
+    df["Prezzo"] = df["Prezzo"].round(2)
+
     return df[["item_id", *remaining_cols, "Prezzo"]]
 
 
@@ -124,7 +128,8 @@ class Database:
                             SELECT 1
                             FROM menu_new t1
                             WHERE t1.item_id = menu.item_id
-                                AND t1.Prezzo != menu.Prezzo
+                                -- CAST a FLOAT per evitare che 3,000001 <> 3
+                                AND CAST(t1.Prezzo AS FLOAT) != menu.Prezzo
                         )
                     )
                     RETURNING *;
@@ -153,7 +158,8 @@ class Database:
                         SELECT 1
                         FROM menu t2
                         WHERE t2.item_id = t1.item_id
-                            AND t2.Prezzo = t1.Prezzo
+                            -- CAST a FLOAT per evitare che 3,000001 <> 3
+                            AND t2.Prezzo = CAST(t1.Prezzo AS FLOAT)
                             AND t2.isActive = TRUE
                     )
                     ON CONFLICT DO NOTHING

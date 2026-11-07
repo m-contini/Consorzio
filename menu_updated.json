@@ -386,12 +386,12 @@
         ],
         "BIRRE SENZA ALCOOL meno di 0,5 VOL BOTTIGLIA O LATTINA": [
             {
-                "name1": "BIRRA ALCOHOL FREE <0,5 VOL IN ARRIVO",
+                "name1": "BIRRA ALCOHOL FREE <0,5 VOL",
                 "name2": "33 cl",
                 "price": "€ 7,50"
             },
             {
-                "name1": "BIRRA ALCOHOL FREE <0,5 VOL IN ARRIVO",
+                "name1": "BIRRA ALCOHOL FREE <0,5 VOL",
                 "name2": "50 cl",
                 "price": "€ 8,50"
             }
@@ -431,6 +431,11 @@
                 "name1": "MORELLINO DI SCANSANO 2023 La Selva BIO VEGAN",
                 "name2": "Sangiovese, Merlot ,note di frutti rossi e spezie 14% vol",
                 "price": "€ 24 Bottiglia"
+            },
+            {
+                "name1": "GUERRIERO NERO Cantina Guerrieri (marche)",
+                "name2": "Sangiovese, Montepulciano, Cabernet Sauvignon affinamento di 10 mesi in barrique di rovere.13,5% vol",
+                "price": "€ 25 Bottiglia"
             },
             {
                 "name1": "Edoardo Chianti Colli Senesi DOCG - Pizzolato",
@@ -493,6 +498,11 @@
                 "price": "€ 35 Bottiglia"
             },
             {
+                "name1": "GUERRIERO DELLA TERRA Cantina Guerrieri (marche)",
+                "name2": "Uve Montepulciano e Sangiovese affinato un anno rovere .16% alcol vol",
+                "price": "€ 39,90 Bottiglia"
+            },
+            {
                 "name1": "PRIMITIVO DI MANDURIA RISERVA 2019 Masseria JORCHE",
                 "name2": "Uve raccolte a mano 100%primitivo 12 mesi in barrique macerazione sulle bucce ,16% alcol vol",
                 "price": "€ 40 Bottiglia"
@@ -511,6 +521,11 @@
                 "name1": "ROSATO TRENTINO 2024 Cantina Aldeno",
                 "name2": "Delicato con piacevoli note di frutta, vaniglia e viola.i 12% alcol vol",
                 "price": "€ 19 bottiglia"
+            },
+            {
+                "name1": "ROSA DEI VENTI Cantina Guerrieri",
+                "name2": "100% sangiovese vino fresco, note di ciliegia e lampone ,note floreali di rosa canina 12% alcol vol",
+                "price": "€ 19,50 bottiglia"
             }
         ],
         "VINI BIANCHI (possibili allergeni: solfiti)": [
@@ -592,7 +607,7 @@
             {
                 "name1": "GUERRIERO del MARE Cantina Guerrieri",
                 "name2": "100% Bianchello 14,5% vol.",
-                "price": "€ 40,00 bottiglia"
+                "price": "€ 39,90 bottiglia"
             },
             {
                 "name1": "CONTE DELLA VIPERA Cantina Antinori",
@@ -718,9 +733,19 @@
                 "price": "Bottiglia 0,375 lt € 13,50"
             },
             {
+                "name1": "NESSUN DORMA RISERVA 2023 Ca' del Brado",
+                "name2": "Versione Riserva della Vieille Saison Nessun Dorna, affinata 3 anni in botte 6,4% Vol.",
+                "price": "Bottiglia 0,375 lt € 15,50"
+            },
+            {
                 "name1": "CIDER LAMBIC Dansaert del Brussels Beer Project",
                 "name2": "La co-fermentazione di lambic con il succo di mele e pere invecchiato botti per 5 mesi. 7,00% Vol.",
                 "price": "Bottiglia 0,75 lt € 25,50"
+            },
+            {
+                "name1": "GIRARDIN GEUZE BLACK LABEL",
+                "name2": "Geuze note di limone, aceto, metallo, cantina, cuoio e legno 5,0% Vol.",
+                "price": "Bottiglia 0,750 lt € 26,50"
             },
             {
                 "name1": "CANTILLON GUEUZE",
@@ -755,7 +780,7 @@
             {
                 "name1": "BOON OUDE GEUZE Birrificio BOON",
                 "name2": "Miscela di lambic che maturano per 1, 2 e 3 anni in botti di rovere 7% Vol.",
-                "price": "Bottiglia 0,375 lt € 10,50"
+                "price": "Bottiglia 0,375 lt € 12,50"
             },
             {
                 "name1": "VIELLE PROVISION Birrificio De Ranke",
@@ -765,7 +790,7 @@
             {
                 "name1": "BOON OUDE GEUZE Birrificio BOON",
                 "name2": "Miscela di lambic che maturano per 1, 2 e 3 anni in botti di rovere 7% Vol.",
-                "price": "Bottiglia 0,750 lt € 16,50"
+                "price": "Bottiglia 0,750 lt € 22,50"
             },
             {
                 "name1": "MANSUETO 2022 Birrificio Crak",
@@ -781,11 +806,6 @@
                 "name1": "TAKE ME HOME Birrificio Crak",
                 "name2": "Imperial Stout 11 % Vol",
                 "price": "Bottiglia 0,375 lt € 13,5"
-            },
-            {
-                "name1": "MANSUETO RISERVA CHATEAU MARGAUX 2019 DA 37,5 CL (Bottiglia in cassetta di legno)",
-                "name2": "Barley wine invecchiatia per 3 anni in botti di Chateau Margaux ed altri 2 anni in bottiglia 13%Alc vol",
-                "price": "Bottiglia 0,375 lt € 38,00"
             },
             {
                 "name1": "COCOBANANA Birrificio Crak",
@@ -817,6 +837,11 @@
     "MANGIA BENE": {
         "FOCACCINE SFIZIOSE": [
             {
+                "name1": "FOCACCINA AI CEREALI CON COTTO",
+                "name2": "FOCACCINA AI CAREALI CON COTTO (allergeni:1)",
+                "price": "€ 6,00"
+            },
+            {
                 "name1": "FOCACCINA AI CEREALI CON BRISKET",
                 "name2": "FOCACCINA AI CAREALI CON BRISKET (allergeni:1)",
                 "price": "€ 6,50"
@@ -837,6 +862,28 @@
                 "price": "€ 6,00"
             }
         ],
+        "FUORI MENU: FIOCCO DI PROSCIUTTO COTTO": [
+            {
+                "name1": "FUORI MENU 1: FOODISH",
+                "name2": "PANINO CON COTTO, FORMAGGIO SEMISTAGIONATO, ZUCCHINE (allergeni1-7,12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FUORI MENU 2: MEXICAN",
+                "name2": "PANINO CON COTTO, FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA CHIPOTLE (allergeni1-3 -7-12)",
+                "price": "€ 13,50"
+            },
+            {
+                "name1": "FUORI MENU 3: TARTUFO",
+                "name2": "PANINO CON COTTO, TOMA AL TARTUFO, FUNGHI, SALSA BOSCAIOLA (allergeni1-3-7-12)",
+                "price": "€ 14,00"
+            },
+            {
+                "name1": "FUORI MENU 4: STREET FOOD",
+                "name2": "PANINO CON COTTO, FORMAGGIO FRESCO, POMODORI SECCHI, SALSA ROSA (allergeni1-3-7-12)",
+                "price": "€ 13,50"
+            }
+        ],
         "SPECIALE: BRISKET DI ANGUS": [
             {
                 "name1": "SPECIALE 1: FOCACCINA AI CEREALI CON BRISKET",
@@ -854,37 +901,15 @@
                 "price": "€ 20,00"
             }
         ],
-        "FUORI MENU: CIAUSCOLO MARCHIGIANO": [
-            {
-                "name1": "FUORI MENU 1: BRIGANTE",
-                "name2": "PANINO CON CIAUSCOLO, FORMAGGO SEMISTAGIONATO, MELANZANE (allergeni1-7,12",
-                "price": "€ 13,50"
-            },
-            {
-                "name1": "FUORI MENU 2: CALABRIA STYLE",
-                "name2": "PANINO CON CIAUSCOLO, FORMAGGIO SEMISTAGIONATO, NDUJA, PEPERONI (allergeni1-3 -7-12)",
-                "price": "€ 14,00"
-            },
-            {
-                "name1": "FUORI MENU 3: TARTUFO",
-                "name2": "PANINO CON CIAUSCOLO, TOMA AL TARTUFO, FUNGHI (allergeni1-7-12)",
-                "price": "€ 14,00"
-            },
-            {
-                "name1": "FUORI MENU 4: STREET FOOD",
-                "name2": "PANINO CON CIAUSCOLO, GRANA, FUNGHI, SALSA BOSCAIOLA (allergeni1-3-7-12)",
-                "price": "€ 14,00"
-            },
-            {
-                "name1": "FUORI MENU 5: CROSTONE ARROGANTE",
-                "name2": "PANINO CON CIAUSCOLO, ZOLA, PEPERONI, TABASCO (allergeni1-7-12)",
-                "price": "€ 14,00"
-            }
-        ],
         "TAPAS E STUZZICHERIE": [
             {
                 "name1": "FOCACCINA AI CEREALI CON LARDO PATANEGRA",
                 "name2": "FOCACCINA AI CEREALI CON LARDO PATANEGRA (allergeni 1)",
+                "price": "€ 6,00"
+            },
+            {
+                "name1": "SALSICCETTA DI CINTA SENESE+PANE",
+                "name2": "SALSICCETTA DI CINTA SENESE+PANE (allergeni 1)",
                 "price": "€ 6,00"
             },
             {
@@ -1114,7 +1139,7 @@
             },
             {
                 "name1": "CONTADINO",
-                "name2": "PANINO CON SALAME + FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA AI PEPERONI (allergeni:1-3-7-12)",
+                "name2": "PANINO CON SALAME + FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA ROSA (allergeni:1-3-7-12)",
                 "price": "€ 13,50"
             },
             {
@@ -1377,12 +1402,12 @@
     "DOPO CENA": {
         "DOLCI": [
             {
-                "name1": "CROSTATA PERE E CIOCCOLATO",
+                "name1": "TORTA CIOCCOLATO E TORRONE",
                 "name2": "FETTA DI TORTA ARTIGIANALE (allergeni: 1-3-7)",
                 "price": "€ 6,50"
             },
             {
-                "name1": "TORTA CAPRESE",
+                "name1": "CROSTATA ALLE MELE",
                 "name2": "FETTA DI TORTA ARTIGIANALE (allergeni: 1-3-7)",
                 "price": "€ 6,50"
             },
@@ -1692,24 +1717,14 @@
                 "price": "€ 11,5 bicchiere da 0,5 cl € 6 bicchiere da 0,25 cl"
             },
             {
-                "name1": "KURA RUM CASK FINISH",
-                "name2": "Un blended whisky giapponese con un bell’affinamento in botti di rum 40% Alc vol",
-                "price": "€ 15 € bicchiere da 0,5 cl € 7,50 bicchiere da 0,25 cl"
-            },
-            {
                 "name1": "KUJIRA 12 YEARS OLD SHERRY CASK (Okinawa)",
                 "name2": "Whisky di riso, affinato in botti di rovere di sherry ,intenso e speziato 40% alc vol",
                 "price": "€ 25 bicchiere da 0,5 cl € 12,50 bicchiere da 0,25 cl"
             },
             {
-                "name1": "THE CHITA SINGLE GRAIN Distilleria Suntory",
-                "name2": "Whisky di grano, invecchiato in botti di bourbon, sherry e vino,dolce e morbido con note di vaniglia, 43% Alc vol",
-                "price": "€ 8,50 bicchiere da 0,5 cl € 4,50 bicchiere da 0,25 cl"
-            },
-            {
-                "name1": "HIBIKI JAPANESE HARMONY Distilleria Suntory",
-                "name2": "Harmony è un blended dei migliori whisky:Hakushu, Yamazaki e Chita ,morbido e dolce con note di miele, 43% Alc vol",
-                "price": "€ 23 bicchiere 0,5 cl € 11,50 bicchiere 0,25 cl"
+                "name1": "HIBIKI JAPANESE Distilleria Suntory",
+                "name2": "HIBIKI è un blended dei migliori whisky:Hakushu, Yamazaki e Chita ,morbido e dolce con note di miele, 43% Alc vol",
+                "price": "€ 20 bicchiere 0,5 cl € 10,00 bicchiere 0,25 cl"
             },
             {
                 "name1": "SINGLE MALT MIYAGIKYO Distilleria Suntory",
@@ -1782,11 +1797,6 @@
                 "name1": "J. BALLY 2007 BRUT DE FUT AGRICOLO MARTINICA",
                 "name2": "Invecchiato 14 anni in botti di rovere ,note legnose e speziate, con sentori di vaniglia, cassis, cacao 50,6% Alc vol",
                 "price": "€ 25 bicchiere 0,5 cl € 12,50 bicchiere 0,25 cl"
-            },
-            {
-                "name1": "NEISSON XO BATCH N3 AGRICOLE MARTINICA",
-                "name2": "Inbottigliatore indipendente full proof 57,3% Alc vol",
-                "price": "€ 35 bicchiere 0,5 cl € 17,50 bicchiere 0,25 cl"
             }
         ],
         "TEQUILA E MEZCAL MEXICO 100% DE AGAVE": [
