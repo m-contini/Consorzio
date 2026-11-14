@@ -1,26 +1,34 @@
 import html
 import os
-from typing import Any
-import pandas as pd
-from InquirerPy.prompts.list import ListPrompt
-from InquirerPy.base.control import Choice
-from tabulate import tabulate
+from typing import Any, ClassVar
 
+import pandas as pd
+from InquirerPy.base.control import Choice
+from InquirerPy.prompts.list import ListPrompt
 from prompt_toolkit.application import Application
 from prompt_toolkit.buffer import Buffer
-from prompt_toolkit.layout.containers import HSplit, Window
-from prompt_toolkit.layout.controls import BufferControl, FormattedTextControl
+from prompt_toolkit.formatted_text import HTML
 from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.key_binding.key_processor import KeyPressEvent
+from prompt_toolkit.layout.containers import HSplit, Window
+from prompt_toolkit.layout.controls import BufferControl, FormattedTextControl
 from prompt_toolkit.layout.layout import Layout
-from prompt_toolkit.formatted_text import HTML
+from tabulate import tabulate
 
 
 class InteractiveMenu:
     """
     Gestisce un menu interattivo da terminale per esplorare i dati del menù.
     """
-    COLS = ["Macro-categoria", "Categoria", "Articolo", "Dettagli", "Size", "Prezzo"]
+
+    COLS: ClassVar = [
+        "Macro-categoria",
+        "Categoria",
+        "Articolo",
+        "Dettagli",
+        "Size",
+        "Prezzo",
+    ]
 
     def __init__(self, df: pd.DataFrame):
         self.df = df
@@ -136,7 +144,7 @@ class InteractiveMenu:
             ).execute()
         except KeyboardInterrupt:
             choice = "..indietro"
-        
+
         # Logica di ritorno al livello superiore o discesa nel prossimo livello
         if choice == "..indietro":
             if livello == 0:

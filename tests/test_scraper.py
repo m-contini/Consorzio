@@ -1,8 +1,9 @@
-import pytest
-from unittest.mock import MagicMock, patch
-
 import json
 from pathlib import Path
+from unittest.mock import MagicMock, patch
+
+import pytest
+
 from core.scraper import Scraper
 
 
@@ -90,7 +91,7 @@ def test_save_json(scraper_obj: Scraper, tmp_path: Path) -> None:
 
     fake_menu_output = tmp_path / "menu_updated.json"
     with patch("core.scraper.MENU_JSON", fake_menu_output):
-        scraper_obj.save_json(mock_menu)
+        scraper_obj.save_json(mock_menu)  # pyright: ignore[reportArgumentType]
 
         # Entrambi i file devono esistere
         assert scraper_obj.output_file.exists()

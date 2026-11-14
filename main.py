@@ -10,19 +10,27 @@ import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+import duckdb
 from dotenv import load_dotenv
 
-import core.alert as alert
-import core.ingestion as ingestion
-import core.tui as tui
-from core.colors import *
-from core.const import DB_PATH, MENU_JSON, HEADLESS
+from core import (
+    DB_PATH,
+    HEADLESS,
+    MENU_JSON,
+    alert,
+    cyan,
+    ingestion,
+    red,
+    tui,
+    yellow,
+)
 
 now = datetime.now(ZoneInfo("Europe/Rome")).strftime("%Y-%m-%dT%H-%M-%S")
 
 # Percorso per salvare lo storico del file JSON grezzo con timestamp
 history_dir = MENU_JSON.parent / "history"
 db_path = DB_PATH
+
 
 def test_env(required_vars: list[str] | tuple[str, ...] | None = None) -> bool:
     # Serve solo in locale, su cloud fallisce in silenzio
@@ -85,13 +93,23 @@ def run_pipeline() -> None:
             print(cyan("\nLookup:"))
             _tui = tui.InteractiveMenu(cln.df)
             _tui.run()
-    except Exception as e:
+    except (
+        PermissionError,
+        KeyError,
+        ValueError,
+        TypeError,
+        duckdb.IOException,
+        duckdb.Error,
+    ) as e:
         print(f"🚨 {red('[FATAL]')}: {e}", file=sys.stderr)
         _alert.send_email(_alert.build_fatal_alert(e))
         sys.exit(1)
 
 
 def main() -> None:
+
+    print("Data esecuzione: ", now)
+
     start_time = time.perf_counter()
     print("✈️ [START] Avvio pipeline ETL")
     run_pipeline()

@@ -530,9 +530,14 @@
         ],
         "VINI BIANCHI (possibili allergeni: solfiti)": [
             {
+                "name1": "GUERRIERO BIANCO Cantina Guerrieri",
+                "name2": "Floreale, agrumato, pesca, bergamotto, frutta esotica e minerale. 13,5% Alc",
+                "price": "€ 25,00 bottiglia € 6,50 calice"
+            },
+            {
                 "name1": "SAUVIGNON BLANC FRIULI 2023 Cantina Le Favole",
                 "name2": "Delicati profumi di foglia di pomodoro e salvia che incontrano essenze d'ananas e accenni di mela 13,5% Alc vol",
-                "price": "€ 23,00 bottiglia € 6 calice"
+                "price": "€ 23,00 bottiglia"
             },
             {
                 "name1": "GRILLO RAHANA Cantina De Gregorio",
@@ -553,16 +558,6 @@
                 "name1": "VERDICCHIO DEI CASTELLI DI JESI DOC BIO 2025 Podere Santa Lucia",
                 "name2": "Vino profumato ed elegante. Un Verdicchio tradizionale dagli aromi fruttati e floreali. 13% Alc vol",
                 "price": "€ 23,00 bottiglia"
-            },
-            {
-                "name1": "GUERRIERO BIANCO Cantina Guerrieri",
-                "name2": "Floreale, agrumato, pesca, bergamotto, frutta esotica e minerale. 13,5% Alc",
-                "price": "€ 25,00 bottiglia"
-            },
-            {
-                "name1": "GAVI DOCG BIO 2024 del comune di Tassarolo Cantina La Zerba",
-                "name2": "Gavi DOCG biologico da uve Cortese. Fresco, armonico, minerale.13,5% Alc vol",
-                "price": "€ 25,00 bottiglia"
             },
             {
                 "name1": "RIBOLLA GIALLA DOP COLLI ORIENTALI 2024 Cantina Cadibon",
@@ -862,21 +857,26 @@
                 "price": "€ 6,00"
             }
         ],
-        "FUORI MENU: FIOCCO DI PROSCIUTTO COTTO": [
+        "FUORI MENU: SPALLA COTTA A BASSA TEMPERATURA": [
+            {
+                "name1": "FUORI MENU 0: CLASSICO",
+                "name2": "PANINO CON COTTO E FONTINA (allergeni1-7)",
+                "price": "€ 13,50"
+            },
             {
                 "name1": "FUORI MENU 1: FOODISH",
                 "name2": "PANINO CON COTTO, FORMAGGIO SEMISTAGIONATO, ZUCCHINE (allergeni1-7,12)",
                 "price": "€ 13,50"
             },
             {
-                "name1": "FUORI MENU 2: MEXICAN",
-                "name2": "PANINO CON COTTO, FORMAGGIO SEMISTAGIONATO, MELANZANE, SALSA CHIPOTLE (allergeni1-3 -7-12)",
+                "name1": "FUORI MENU 2: VALDOSTANO",
+                "name2": "PANINO CON COTTO, FONTINA, FUNGHI (allergeni1-7-12)",
                 "price": "€ 13,50"
             },
             {
                 "name1": "FUORI MENU 3: TARTUFO",
-                "name2": "PANINO CON COTTO, TOMA AL TARTUFO, FUNGHI, SALSA BOSCAIOLA (allergeni1-3-7-12)",
-                "price": "€ 14,00"
+                "name2": "PANINO CON COTTO, TOMA AL TARTUFO, SALSA BOSCAIOLA (allergeni1-3-7-12)",
+                "price": "€ 13,50"
             },
             {
                 "name1": "FUORI MENU 4: STREET FOOD",
@@ -938,11 +938,6 @@
                 "price": "€ 3,50"
             },
             {
-                "name1": "TARALLINI ALL'ERBA CIPOLLINA",
-                "name2": "TARALLINI ALL'ERBA CIPOLLINA (allergeni:1)",
-                "price": "€ 3,50"
-            },
-            {
                 "name1": "TARALLINI CIPOLLA E UVETTA",
                 "name2": "TARALLINI CIPOLLA E UVETTA (allergeni:1)",
                 "price": "€ 3,50"
@@ -971,12 +966,12 @@
         "NACHOS": [
             {
                 "name1": "CIOTOLA Nachos con salsa VEGAN (piccante) (VEGAN OK)",
-                "name2": "ciotola nachos con salsa VEGANA gusto leggermente piccante",
+                "name2": "ciotola nachos con salsa VEGANA gusto leggermente piccante (allergeni10-12)",
                 "price": "€ 7.00"
             },
             {
                 "name1": "CIOTOLA Nachos con salsa ALGERINA (piccante)",
-                "name2": "ciotola nachos con salsa ALGERINA (allergeni: 3-7-8-10)",
+                "name2": "ciotola nachos con salsa ALGERINA (allergeni: 3-8-10)",
                 "price": "€ 7.00"
             },
             {
@@ -1407,7 +1402,7 @@
                 "price": "€ 6,50"
             },
             {
-                "name1": "CROSTATA ALLE MELE",
+                "name1": "TORTA SACHER",
                 "name2": "FETTA DI TORTA ARTIGIANALE (allergeni: 1-3-7)",
                 "price": "€ 6,50"
             },

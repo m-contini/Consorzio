@@ -1,8 +1,12 @@
-from .colors import *
-from .const import URL, MENU_JSON
-import core.scraper as scraper
-import core.cleaner as cleaner
-import core.database as database
+from pathlib import Path
+from typing import cast
+
+import cleaner
+import database
+import scraper
+
+from .colors import cyan, green, yellow
+from .const import MENU_JSON, URL
 
 
 def data_ingestion(
@@ -31,7 +35,7 @@ def data_ingestion(
     _cleaner.menu = _scraper.parse_menu(URL)
 
     # SAVE
-    _scraper.save_json(_cleaner.menu)
+    _scraper.save_json(cast(scraper.MenuCompleto, _cleaner.menu))
     print(f"\n{green('[JSON]')} Output written to '{yellow(_scraper.output_file)}'")
     print(f"{green('[JSON]')} Output written to '{yellow(MENU_JSON)}'")
 

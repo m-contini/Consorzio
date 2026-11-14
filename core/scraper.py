@@ -1,15 +1,15 @@
 import json
 from pathlib import Path
-from typing import Any, TypeAlias
+from typing import Any, ClassVar
 
 import requests
 from bs4 import BeautifulSoup
 
 from .const import MENU_JSON
 
-SottoCategoria: TypeAlias = list[dict[str, Any]]
-SezioneMenu: TypeAlias = dict[str, SottoCategoria]
-MenuCompleto: TypeAlias = dict[str, SezioneMenu]
+SottoCategoria = type[list[dict[str, Any]]]
+SezioneMenu = type[dict[str, SottoCategoria]]
+MenuCompleto = type[dict[str, SezioneMenu]]
 
 
 class Scraper:
@@ -19,17 +19,18 @@ class Scraper:
     in una gerarchia a tre livelli: Macro-categoria, Categoria e Prodotto.
     """
 
-    HEADERS = {
+    HEADERS: ClassVar = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
         "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
     }
+    # menu = None
 
     def __init__(self, output_file: Path):
         # File JSON su cui scrivere il menù
         self.output_file = output_file
-        self.menu: MenuCompleto = {}
+        self.menu: dict[Any, Any] = {}
 
-    def parse_menu(self, url: str) -> MenuCompleto:
+    def parse_menu(self, url: str) -> dict[Any, Any]:
 
         response = requests.get(url, headers=Scraper.HEADERS, timeout=15)
 

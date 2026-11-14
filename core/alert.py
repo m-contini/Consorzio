@@ -7,13 +7,13 @@ from typing import Any
 import pandas as pd
 from dotenv import load_dotenv
 
-from .colors import *
+from .colors import green, red
 
 
 def _format_price(price: Any) -> str:
     try:
         return f"{float(price):.2f} €"
-    except (ValueError, TypeError):
+    except ValueError, TypeError:
         return str(price)
 
 
@@ -59,7 +59,7 @@ class Notification:
             subject.append(f"+{len(inserted_rows)} nuovi")
         subject_str = " | ".join(subject) if subject else "Nessuna variazione"
         msg["Subject"] = f"{self.timestamp} | Menu Consorzio ({subject_str})"
-        msg.set_content("Ciao,\n\nIn allegato le variazioni del menu.\n\nSaluti.\n")
+        msg.set_content("Ciao,\n\nIn allegato le variazioni del menu.\n\nSaluti.\n")  # pyright: ignore[reportUnknownMemberType]
 
         # -----------------------------------
         # Tabelle HTML nel body del messaggio
@@ -99,7 +99,7 @@ class Notification:
             "<p>Saluti,</p>"
             "<p><strong>m-contini</strong></p>"
         )
-        msg.add_alternative(html_body, subtype="html")
+        msg.add_alternative(html_body, subtype="html")  # pyright: ignore[reportUnknownMemberType]
 
         # -------------------------------------------------------
         # GESTIONE ALLEGATI IN MEMORIA (Nessun file sul disco)
@@ -114,7 +114,7 @@ class Notification:
             # Il DataFrame # viene convertito in stringa CSV
             # e poi codificato in byte per l'invio
             df_as_str = df.to_csv(index=False, sep=";")
-            msg.add_attachment(
+            msg.add_attachment(  # pyright: ignore[reportUnknownMemberType]
                 df_as_str.encode("utf-8"),
                 maintype="text",
                 subtype="csv",
@@ -131,7 +131,7 @@ class Notification:
         msg["Subject"] = f"{self.timestamp} | Errore Menu Consorzio"
 
         stack_trace = traceback.format_exc()
-        msg.set_content(
+        msg.set_content(  # pyright: ignore[reportUnknownMemberType]
             "Ciao,\n\n"
             "Sfortunatamente si è verificato un errore "
             "durante l'esecuzione dello script:\n\n"
@@ -161,4 +161,4 @@ class Notification:
             )
         except Exception as e:
             print(f"{red('[EMAIL]')} ❌ Error during email sending: {e}")
-            raise e
+            raise

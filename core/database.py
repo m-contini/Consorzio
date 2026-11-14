@@ -1,8 +1,9 @@
 from pathlib import Path
+
 import duckdb
 import pandas as pd
 
-from .colors import *
+from .colors import green, magenta, yellow
 
 
 def hashed_df(df: pd.DataFrame) -> pd.DataFrame:
@@ -186,6 +187,6 @@ class Database:
                     print(f"\n✨ {green('[DB]')} No changes detected.")
                     self._is_updated = False
 
-            except Exception as e:
+            except Exception:
                 conn.execute("ROLLBACK")
-                raise e
+                raise

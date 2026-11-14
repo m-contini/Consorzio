@@ -3,9 +3,11 @@ Utility per la formattazione del testo nel terminale tramite codici colore ANSI.
 """
 
 from pathlib import Path
+
 from colorama import Fore
 
 from .const import HEADLESS
+
 
 def red(text: str | Path) -> str:
     if HEADLESS:

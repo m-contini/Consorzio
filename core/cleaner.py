@@ -2,12 +2,10 @@ import json
 import re
 import warnings
 from pathlib import Path
-from typing import NamedTuple
+from typing import Any, NamedTuple
 
 import pandas as pd
 from tabulate import tabulate
-
-from .scraper import MenuCompleto
 
 
 class Rule(NamedTuple):
@@ -31,11 +29,11 @@ class Cleaner:
     def __init__(self, input_file: Path) -> None:
         # File JSON da cui leggere il menù
         self.input_file = input_file
-        self.menu: MenuCompleto = self.load_json()
+        self.menu: dict[Any, Any] = self.load_json()
         # DataFrame contenente il menù ripulito
         self.df: pd.DataFrame = pd.DataFrame()
 
-    def load_json(self) -> MenuCompleto:
+    def load_json(self) -> dict[Any, Any]:
         """
         Carica il contenuto del file JSON specificato da `self.input_file`.
         """
